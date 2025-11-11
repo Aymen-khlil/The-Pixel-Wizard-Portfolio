@@ -14,12 +14,18 @@ body {
 }
 
 body {
-  background-image: url("/bgg.png");
-  background-size: cover; /* fills entire viewport */
-  background-position: center; /* centers image */
+  background-image: url("/home-background.png");
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  cursor: url("/wanP.png"), auto;
+}
+
+button:hover {
+  cursor: url("/wanP-onClick.png"), auto;
 }
 
 * {

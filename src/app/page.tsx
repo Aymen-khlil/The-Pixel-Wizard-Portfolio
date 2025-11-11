@@ -1,10 +1,10 @@
-import Shuffle from "@/components/Shuffle";
+import Image from "next/image";
 import MagicButton from "../components/button/MagicButton";
 import TextType from "@/components/TextType";
 
 export default function HomePage() {
   return (
-    <section className="h-screen flex flex-col items-center justify-center text-center overflow-hidden ">
+    <section className="h-screen  flex flex-col items-center justify-center text-center overflow-auto ">
       <div className=" flex items-center justify-center h-full w-full">
         <div
           className="flex flex-col h-screen items-center justify-between"
@@ -31,6 +31,7 @@ export default function HomePage() {
               />
             </div>
           </div>
+
           <div className="">
             <MagicButton />
           </div>
