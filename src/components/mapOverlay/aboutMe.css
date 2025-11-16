@@ -1,0 +1,23 @@
+.left-side {
+  position: relative;
+  /* padding: 10px 12px; */
+  border-style: solid;
+  background-clip: border-box;
+  border-image-slice: 27 27 27 27 fill;
+  border-image-width: 20px 20px 20px 20px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: stretch stretch;
+  border-image-source: url("/leftSide.png");
+}
+
+.right-side {
+  position: relative;
+  /* padding: 10px 12px; */
+  border-style: solid;
+  background-clip: border-box;
+  border-image-slice: 27 27 27 27 fill;
+  border-image-width: 20px 20px 20px 20px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: stretch stretch;
+  border-image-source: url("/rightSide.png");
+}
