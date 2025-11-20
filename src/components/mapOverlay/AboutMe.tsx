@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/set-state-in-effect */
 "use client";
 
 import { motion, AnimatePresence, easeInOut } from "framer-motion";
@@ -22,9 +23,13 @@ export default function AboutMe() {
   const maskStart = welcomeTotal; // when mask should appear
   const maskEnd = maskStart + ANIMATION.maskFadeIn + ANIMATION.maskVisible;
 
-  const [showWelcome, setShowWelcome] = useState(true);
+  const [showWelcome, setShowWelcome] = useState(false);
   const [showMask, setShowMask] = useState(false);
   const [revealPage, setRevealPage] = useState(false);
+
+  useEffect(() => {
+    setShowWelcome(true);
+  }, []);
 
   // Welcome disappears
   useEffect(() => {

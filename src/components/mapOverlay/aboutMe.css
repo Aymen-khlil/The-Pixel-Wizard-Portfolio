@@ -8,7 +8,7 @@
   inset: 0;
   position: absolute;
   background-color: black;
-  mask-image: url("./images/gifTwo.gif");
+  mask-image: url("./images/loopingGif.gif");
   mask-size: cover;
   mask-position: center;
   mask-repeat: no-repeat;
@@ -17,7 +17,7 @@
   background-size: cover;
   background-position: center;
   opacity: 1;
-  animation: loadMask 0.1s forwards 0.5s;
+  animation: loadMask 0.1s forwards 1s;
   animation-fill-mode: both;
 }
 
@@ -38,4 +38,23 @@
 
 .welcome-message {
   font-family: "Beth Ellen", cursive;
+}
+
+.scroll-about {
+  position: relative;
+  border-style: solid;
+  padding: 17px 25px;
+  border-image-source: url("./images/openedScroll.png");
+  border-image-slice: 62 87 65 87 fill;
+  border-image-width: 18px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: stretch stretch;
+  background-clip: border-box;
+}
+
+.title-about-me {
+  color: #b94e1c;
+  text-shadow: -0.5px -0.5px 2px #fba658, 0.5px -0.5px 2px #fba658,
+    -0.5px 0.5px 2px #fba658, 0.5px 0.5px 2px #fba658, -0.5px 0 2px #fba658,
+    0.5px 0 2px #fba658, 0 -0.5px 2px #fba658, 0 0.5px 2px #fba658;
 }

@@ -11,6 +11,7 @@
   position: absolute;
   inset: 0;
   mask-image: url("/backgrounds/gifTwo.gif");
+  -webkit-mask-image: url("/backgrounds/gifTwo.gif");
   mask-size: cover;
   mask-position: center;
   mask-repeat: no-repeat;

@@ -38,8 +38,10 @@ const Navbar = () => {
         ease: "easeInOut",
       }}
     >
-      <div className="banner flex items-center justify-center w-4/5">
-        <div className="navbar-title w-[60%] uppercase">{whichRoute()}</div>
+      <div className="banner flex items-center justify-center w-full">
+        <div className="navbar-title w-[60%] uppercase sr-only md:block">
+          {whichRoute()}
+        </div>
         <div className=" w-full flex justify-around items-center uppercase ">
           <Link
             href={"/choose-your-house"}
