@@ -39,10 +39,10 @@ const Navbar = () => {
       }}
     >
       <div className="banner flex items-center justify-center w-full">
-        <div className="navbar-title w-[60%] uppercase sr-only md:block">
+        <div className="navbar-title w-[60%] uppercase hidden md:block">
           {whichRoute()}
         </div>
-        <div className=" w-full flex justify-around items-center uppercase ">
+        <div className=" w-full flex justify-around items-center uppercase  flex-wrap">
           <Link
             href={"/choose-your-house"}
             className={`${
