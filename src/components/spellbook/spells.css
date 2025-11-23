@@ -1,0 +1,61 @@
+.spell-container {
+  position: relative;
+  border-style: solid;
+  padding: 10px;
+  border-image-source: url("./images/RuneTwo.png");
+  border-image-slice: 55 39 55 39 fill;
+  border-image-width: 12px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: stretch stretch;
+  background-clip: border-box;
+  transition: all 0.3s ease;
+}
+
+.spell-container:hover {
+  filter: drop-shadow(0 0 8px rgba(251, 191, 36, 0.6));
+}
+
+.spell-text {
+  transition: all 0.3s ease;
+}
+
+.spell-container:hover .spell-text {
+  transform: scale(1.05);
+  color: #78350f;
+}
+
+.spell-holder {
+  position: relative;
+  border-style: solid;
+  padding: 50px 30px;
+  border-image-source: url("./images/Spell-holder.png");
+  border-image-slice: 68 49 55 49 fill;
+  border-image-width: 40px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: stretch stretch;
+  background-clip: border-box;
+}
+
+.spell-holder-left {
+  position: relative;
+  border-style: solid;
+  padding: 50px 30px;
+  border-image-source: url("./images/spellLeft.png");
+  border-image-slice: 68 49 55 49 fill;
+  border-image-width: 40px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: stretch stretch;
+  background-clip: border-box;
+}
+
+.spell-holder-right {
+  position: relative;
+  border-style: solid;
+  padding: 50px 30px;
+  border-image-source: url("./images/spellRight.png");
+  border-image-slice: 68 49 55 49 fill;
+  border-image-width: 40px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: stretch stretch;
+  background-clip: border-box;
+}

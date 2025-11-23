@@ -5,8 +5,10 @@ import harryScar from "./images/harry-scar.png";
 import ActionButton from "../button/ActionButton";
 import { AnimatePresence, motion } from "framer-motion";
 import Plume from "../button/Plume";
+import { useRouter } from "next/navigation";
 
 const AboutMeContent = () => {
+  const router = useRouter();
   return (
     <div className="flex flex-col h-full  lg:px-40 overflow-y-auto">
       <Navbar />
@@ -147,7 +149,9 @@ const AboutMeContent = () => {
                     ease: "easeInOut",
                   }}
                 >
-                  <ActionButton>Continue</ActionButton>
+                  <ActionButton onClick={() => router.push("/spellbook")}>
+                    Continue
+                  </ActionButton>
                 </motion.div>
               </div>
             </div>

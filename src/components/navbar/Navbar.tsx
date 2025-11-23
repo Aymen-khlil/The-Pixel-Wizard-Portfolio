@@ -54,7 +54,7 @@ const Navbar = () => {
             Houses
           </Link>
           <Link
-            href={""}
+            href={"/marauder-map"}
             className={`${
               pathname === "/marauder-map" ? "action-active" : "navbar-action"
             } `}
@@ -62,7 +62,7 @@ const Navbar = () => {
             About
           </Link>
           <Link
-            href={""}
+            href={"/spellbook"}
             className={`${
               pathname === "/spellbook" ? "action-active" : "navbar-action"
             } `}
