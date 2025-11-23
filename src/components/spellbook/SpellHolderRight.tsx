@@ -9,9 +9,9 @@ const SpellHolderRight = ({
   title?: string;
 }) => {
   return (
-    <div className="spell-holder-right w-full h-[500px] flex flex-col">
+    <div className="spell-holder-right min-w-[370px]  max-w-[500px]  h-[500px] flex flex-col">
       {title && (
-        <h2 className="text-xl font-bold text-amber-100 text-center mb-4 drop-shadow-lg">
+        <h2 className="text-xl font-bold text-[#7E280C] text-center mb-4 drop-shadow-lg">
           {title}
         </h2>
       )}

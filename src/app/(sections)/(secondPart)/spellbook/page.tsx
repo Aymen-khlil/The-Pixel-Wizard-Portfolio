@@ -1,9 +1,12 @@
+"use client";
+
 import Navbar from "@/components/navbar/Navbar";
 import "./spellbook.css";
 import SpellContainer from "@/components/spellbook/SpellContainer";
 import SpellHolder from "@/components/spellbook/SpellHolder";
 import SpellHolderLeft from "@/components/spellbook/SpellHolderLeft";
 import SpellHolderRight from "@/components/spellbook/SpellHolderRight";
+import { motion } from "framer-motion";
 
 const Spellbook = () => {
   const frontendSpells = [
@@ -30,6 +33,9 @@ const Spellbook = () => {
     "MongoDB",
     "REST APIs",
     "Server-Sent Events (SSE)",
+    "Active Campaign",
+    "Google Ads",
+    "Serper",
   ];
 
   const toolSpells = [
@@ -42,52 +48,126 @@ const Spellbook = () => {
     "Postman",
     "Figma",
     "VS Code",
-    "Active Campaign",
-    "Google Ads",
-    "Serper",
   ];
 
   return (
-    <div className="spellbook-content flex flex-col h-screen overflow-hidden">
+    <div className="spellbook-content flex flex-col h-screen overflow-y-auto">
       <div className="lg:px-40">
         <Navbar />
       </div>
 
-      {/* Main content - no scroll */}
       <div className="flex-1 flex items-center justify-center px-6 md:px-12 lg:px-24 py-12">
-        <div className="w-full max-w-7xl flex gap-6 items-stretch justify-center">
-          {/* Frontend Spells */}
-          <div className="flex-1">
+        <div className="w-full max-w-7xl flex gap-6 items-stretch justify-center flex-wrap">
+          <motion.div
+            className="flex-1"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             <SpellHolderLeft title="Frontend Enchantments">
-              <div className="flex flex-wrap items-center justify-center gap-3">
-                {frontendSpells.map((spell) => (
-                  <SpellContainer key={spell} spell={spell} />
+              <motion.div
+                initial="hidden"
+                animate="visible"
+                variants={{
+                  hidden: { opacity: 0 },
+                  visible: {
+                    opacity: 1,
+                    transition: {
+                      staggerChildren: 0.12,
+                    },
+                  },
+                }}
+                className="flex flex-wrap items-center justify-center gap-3"
+              >
+                {frontendSpells.map((spell, i) => (
+                  <motion.div
+                    key={spell + i}
+                    variants={{
+                      hidden: { opacity: 0, y: 10, filter: "blur(4px)" },
+                      visible: { opacity: 1, y: 0, filter: "blur(0px)" },
+                    }}
+                    transition={{ duration: 0.5 }}
+                  >
+                    <SpellContainer spell={spell} />
+                  </motion.div>
                 ))}
-              </div>
+              </motion.div>
             </SpellHolderLeft>
-          </div>
+          </motion.div>
 
-          {/* Backend Spells */}
-          <div className="flex-1">
+          <motion.div
+            className="flex-1"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             <SpellHolder title="Backend Sorcery">
-              <div className="flex flex-wrap items-center justify-center gap-3">
-                {backendSpells.map((spell) => (
-                  <SpellContainer key={spell} spell={spell} />
+              <motion.div
+                initial="hidden"
+                animate="visible"
+                variants={{
+                  hidden: { opacity: 0 },
+                  visible: {
+                    opacity: 1,
+                    transition: {
+                      staggerChildren: 0.12,
+                    },
+                  },
+                }}
+                className="flex flex-wrap items-center justify-center gap-3"
+              >
+                {backendSpells.map((spell, i) => (
+                  <motion.div
+                    key={spell + i}
+                    variants={{
+                      hidden: { opacity: 0, y: 10, filter: "blur(4px)" },
+                      visible: { opacity: 1, y: 0, filter: "blur(0px)" },
+                    }}
+                    transition={{ duration: 0.5 }}
+                  >
+                    <SpellContainer spell={spell} />
+                  </motion.div>
                 ))}
-              </div>
+              </motion.div>
             </SpellHolder>
-          </div>
+          </motion.div>
 
-          {/* Tools Spells */}
-          <div className="flex-1">
+          <motion.div
+            className="flex-1"
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             <SpellHolderRight title="Magical Tools">
-              <div className="flex flex-wrap items-center justify-center gap-3">
-                {toolSpells.map((spell) => (
-                  <SpellContainer key={spell} spell={spell} />
+              <motion.div
+                initial="hidden"
+                animate="visible"
+                variants={{
+                  hidden: { opacity: 0 },
+                  visible: {
+                    opacity: 1,
+                    transition: {
+                      staggerChildren: 0.12,
+                    },
+                  },
+                }}
+                className="flex flex-wrap items-center justify-center gap-3"
+              >
+                {toolSpells.map((spell, i) => (
+                  <motion.div
+                    key={spell + i}
+                    variants={{
+                      hidden: { opacity: 0, y: 10, filter: "blur(4px)" },
+                      visible: { opacity: 1, y: 0, filter: "blur(0px)" },
+                    }}
+                    transition={{ duration: 0.5 }}
+                  >
+                    <SpellContainer spell={spell} />
+                  </motion.div>
                 ))}
-              </div>
+              </motion.div>
             </SpellHolderRight>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>
