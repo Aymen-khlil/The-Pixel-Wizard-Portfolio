@@ -34,7 +34,7 @@ const Navbar = () => {
       initial={{ opacity: 0, y: -5 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{
-        duration: 0.4,
+        duration: 0.7,
         ease: "easeInOut",
       }}
     >
@@ -70,7 +70,7 @@ const Navbar = () => {
             Skills
           </Link>
           <Link
-            href={""}
+            href={"/the-pensieve-archives"}
             className={`${
               pathname === "/the-pensieve-archives"
                 ? "action-active"
