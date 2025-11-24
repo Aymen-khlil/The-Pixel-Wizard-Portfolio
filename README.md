@@ -4,7 +4,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/REACT-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
-  <img src="https://img.shields.io/badge/VITE-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
+  <img src="https://img.shields.io/badge/next.ts-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" />
   <img src="https://img.shields.io/badge/TAILWIND%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
   <img src="https://img.shields.io/badge/TYPESCRIPT-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
   <img src="https://img.shields.io/badge/FRAMER%20MOTION-000000?style=for-the-badge&logo=framermotion&logoColor=white" />
@@ -24,7 +24,7 @@ smooth animations, and a professional storytelling flow to present my skills, ex
 ## 🔥 Features
 
 <ul>
-  <li>⚡ <b>Modern Stack</b>: Built using <b>React, Vite, Tailwind CSS, TypeScript, and Framer Motion</b>.</li>
+  <li>⚡ <b>Modern Stack</b>: Built using <b>React, Next TS, Tailwind CSS, TypeScript, and Framer Motion</b>.</li>
   <li>🎨 <b>Clean UI & Animations</b>: Smooth transitions and micro-interactions across all sections.</li>
   <li>📱 <b>Fully Responsive</b>: Perfect experience on desktop, tablet, and mobile.</li>
   <li>🧩 <b>Reusable Components</b>: Modular architecture built for reusability and scalability.</li>
@@ -56,14 +56,14 @@ smooth animations, and a professional storytelling flow to present my skills, ex
 ## 🚀 Live Demo
 
 👉 **Coming Soon**  
-_(Or send me your URL and I’ll insert it.)_
+
 
 ---
 
 ## 🛠️ Setup & Run
 
 ```bash
-git clone https://github.com/Aymen-khlil/your-portfolio-repo.git
-cd your-portfolio-repo
+git clone https://github.com/Aymen-khlil/The-Pixel-Wizard-Portfolio.git
+cd The-Pixel-Wizard-Portfolio
 npm install
 npm run dev
