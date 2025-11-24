@@ -10,7 +10,9 @@
   <img src="https://img.shields.io/badge/FRAMER%20MOTION-000000?style=for-the-badge&logo=framermotion&logoColor=white" />
 </p>
 
-<h2 align="center">✨ Aymen Khlil – Developer Portfolio ✨</h2>
+<h2 align="center" style="font-family: 'Press Start 2P', cursive;">✨ 
+The Pixel Wizard Portfolio
+ ✨</h2>
 
 <p align="center">
 Step into a modern, fast, and beautifully animated developer portfolio showcasing my journey as a
