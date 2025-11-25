@@ -1,13 +1,17 @@
 "use client";
 import Navbar from "@/components/navbar/Navbar";
 import "./experience.css";
+import ExperienceContainer from "@/components/experienceTrail/ExperienceContainer";
+
 const Experiences = () => {
   return (
-    <div className="experience-holder flex flex-col h-screen overflow-y-auto">
+    <div className="experience-holder flex flex-col h-screen">
       <div className="lg:px-40">
         <Navbar />
       </div>
-      <div className="flex-1 bg-amber-400">aze</div>
+      <div className="flex-1 h-full  flex justify-center my-10 lg:px-40 overflow-auto">
+        <ExperienceContainer />
+      </div>
     </div>
   );
 };

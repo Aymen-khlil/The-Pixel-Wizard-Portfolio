@@ -1,0 +1,14 @@
+.experience-card {
+  position: relative;
+  padding: 30px 15px;
+  border: 10px solid transparent;
+  background-clip: border-box;
+  border-image-slice: 42 34 39 32 fill;
+  border-image-width: 40px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: stretch stretch;
+  border-image-source: url("./images/exp-scroll.png");
+}
+
+.experience-container {
+}
