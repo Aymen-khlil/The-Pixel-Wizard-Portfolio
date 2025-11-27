@@ -21,7 +21,7 @@ export default function TransitionOverlay({
   imageSrc,
   text,
   bgColor = "#000000",
-  duration = 1000,
+  duration = 500,
   displayTime = 2000,
   onComplete,
 }: TransitionOverlayProps) {

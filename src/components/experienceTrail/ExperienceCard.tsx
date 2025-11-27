@@ -10,17 +10,20 @@ import {
 import OffGem from "./images/off-gem.png";
 import OnGem from "./images/on-gem.png";
 import { useRef, useState, useEffect } from "react";
+import { useWindowSize } from "../../lib/detectscreen";
 
 interface ExperienceCardProps {
   title: string;
-  description: string;
+  description: React.ReactNode;
   isLast: boolean;
+  customHeight?: string;
 }
 
 const ExperienceCard = ({
   title,
   description,
   isLast,
+  customHeight = "400px",
 }: ExperienceCardProps) => {
   const cardRef = useRef<HTMLDivElement>(null);
   const [containerElement, setContainerElement] = useState<HTMLElement | null>(
@@ -41,74 +44,89 @@ const ExperienceCard = ({
   const { scrollYProgress } = useScroll({
     target: cardRef,
     container: containerElement ? { current: containerElement } : undefined,
-    offset: ["center end", "center start"],
+    offset: ["start end", "center start"],
   });
 
   const [isAtCenter, setIsAtCenter] = useState(false);
 
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
     // When latest > 0, the card center has crossed the viewport center
-    setIsAtCenter(latest > 0);
+    setIsAtCenter(latest > 0.1);
   });
 
   const contentOpacity = useTransform(
     scrollYProgress,
     [0, 0.3, 0.5],
-    [0, 0, 1]
+    [0, 0.7, 1]
   );
 
+  const { width } = useWindowSize();
+
+  const expandedHeight =
+    width && width < 600 ? `calc(${customHeight} + 150px)` : customHeight;
+
   return (
-    <div className="flex items-start justify-between gap-20 py-10">
-      {isLast ? (
-        <Image
-          className="opacity-50"
-          src={OffGem}
-          alt=""
-          width={24}
-          height={24}
-        />
-      ) : (
-        <motion.div
-          className="shrink-0 pt-2  "
-          initial={{ opacity: 0.5 }}
-          animate={{ opacity: isAtCenter ? 1 : 0.5 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-        >
+    <div className="flex items-start  gap-20 py-10">
+      <div className=" hidden lg:block">
+        {isLast ? (
           <Image
-            src={isAtCenter ? OnGem : OffGem}
+            className="opacity-50"
+            src={OffGem}
             alt=""
             width={24}
             height={24}
           />
-        </motion.div>
-      )}
-      {isLast ? (
-        <div
-          ref={cardRef}
-          className="experience-card w-[350px] overflow-hidden h-6 flex items-center justify-center "
-        >
-          <div className="text-white">ComingSoon</div>
-        </div>
-      ) : (
-        <motion.div
-          ref={cardRef}
-          initial={{ height: "40px" }}
-          animate={{
-            height: isAtCenter ? "400px" : "40px",
-          }}
-          transition={{
-            duration: 0.6,
-            ease: "easeOut",
-            delay: 0.2,
-          }}
-          className="experience-card w-[350px] overflow-hidden  "
-        >
-          <motion.div style={{ opacity: contentOpacity }} className="p-6">
-            <h3 className="text-xl font-bold mb-2 text-white">{title}</h3>
-            <p className="text-sm text-white/80">{description}</p>
+        ) : (
+          <motion.div
+            className="shrink-0 pt-2  "
+            initial={{ opacity: 0.5 }}
+            animate={{ opacity: isAtCenter ? 1 : 0.5 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+          >
+            <Image
+              src={isAtCenter ? OnGem : OffGem}
+              alt=""
+              width={24}
+              height={24}
+            />
           </motion.div>
-        </motion.div>
-      )}
+        )}
+      </div>
+
+      <div className=" w-full">
+        {isLast ? (
+          <div
+            ref={cardRef}
+            className="experience-card  max-w-[500px] min-w-[350px] overflow-hidden h-6 flex items-center justify-center "
+          >
+            <div className="text-white">Coming Soon</div>
+          </div>
+        ) : (
+          <motion.div
+            ref={cardRef}
+            initial={{ height: "40px" }}
+            animate={{
+              height: isAtCenter ? expandedHeight : "40px",
+            }}
+            transition={{
+              duration: 0.6,
+              ease: "easeOut",
+              delay: 0.2,
+            }}
+            className="experience-card max-w-[500px] min-w-[350px] overflow-hidden  "
+          >
+            <motion.div
+              style={{ opacity: contentOpacity }}
+              className="px-2 py-6  h-full"
+            >
+              <p className="text- font-semibold  mb-2 text-[#7f3313] text-center">
+                {title}
+              </p>
+              <div className="text-sm ">{description}</div>
+            </motion.div>
+          </motion.div>
+        )}
+      </div>
     </div>
   );
 };

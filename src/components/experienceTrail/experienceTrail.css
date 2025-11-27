@@ -11,4 +11,10 @@
 }
 
 .experience-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.experience-container::-webkit-scrollbar {
+  display: none;
 }
