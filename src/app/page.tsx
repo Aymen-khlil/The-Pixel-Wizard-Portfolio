@@ -3,9 +3,10 @@
 import MagicButton from "../components/button/MagicButton";
 import TextType from "@/components/TextType";
 import TransitionOverlay from "@/components/transitionOverlays/TransitionOverlays";
+import { useThemeStore } from "@/store/theme/themeStore";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/navigation";
-import { Activity, useState } from "react";
+import { Activity, useEffect, useState } from "react";
 
 export default function HomePage() {
   const [transition, setTransition] = useState(false);
@@ -22,6 +23,11 @@ export default function HomePage() {
       setHideContent(true);
     }, totalTime);
   };
+
+  const { loadTheme } = useThemeStore();
+  useEffect(() => {
+    loadTheme();
+  }, [loadTheme]);
 
   return (
     <section
