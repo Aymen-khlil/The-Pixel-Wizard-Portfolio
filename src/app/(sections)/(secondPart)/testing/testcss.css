@@ -32,3 +32,119 @@
   border-image-repeat: stretch stretch;
   border-image-source: url("/exp-scroll.png");
 }
+
+.gryffindor-btn {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  padding: 0.9rem 2.5rem;
+  color: #ffb84d;
+  text-align: center;
+  border-style: solid;
+  background-clip: padding-box;
+  border-image-slice: 19 19 19 19 fill;
+  border-image-width: 14px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: stretch stretch;
+  border-image-source: url("/buttons/gryffindor-btn.png");
+  width: 200px;
+}
+
+.ravenclaw-btn {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  padding: 0.9rem 2.5rem;
+  color: #b5835e;
+  text-align: center;
+  border-style: solid;
+  background-clip: padding-box;
+  border-image-slice: 19 19 19 19 fill;
+  border-image-width: 14px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: stretch stretch;
+  border-image-source: url("/buttons/ravenclaw-btn.png");
+  width: 200px;
+}
+
+.slytherin-btn {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  padding: 0.9rem 2.5rem;
+  color: #a5a5a6;
+  text-align: center;
+  border-style: solid;
+  background-clip: padding-box;
+  border-image-slice: 19 19 19 19 fill;
+  border-image-width: 14px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: stretch stretch;
+  border-image-source: url("/buttons/slytherin-btn.png");
+  width: 200px;
+}
+
+.huffelpuff-btn {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  padding: 0.9rem 2.5rem;
+  color: black;
+  text-align: center;
+  border-style: solid;
+  background-clip: padding-box;
+  border-image-slice: 19 19 19 19 fill;
+  border-image-width: 14px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: stretch stretch;
+  border-image-source: url("/buttons/huffelpuff-btn.png");
+  width: 200px;
+}
+
+.gryffindor-navbar {
+  position: relative;
+  border-style: solid;
+  padding: 17px 25px;
+  border-image-slice: 50 45 50 45 fill;
+  border-image-width: 12px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: stretch stretch;
+  background-clip: border-box;
+  border-image-source: url("/navbars/Gryffinndor-navbar.png");
+}
+
+.ravenclaw-navbar {
+  position: relative;
+  border-style: solid;
+  padding: 17px 25px;
+  border-image-slice: 50 45 50 45 fill;
+  border-image-width: 12px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: stretch stretch;
+  background-clip: border-box;
+  border-image-source: url("/navbars/ravenclaw-navbar.png");
+}
+
+.slytherin-navbar {
+  position: relative;
+  border-style: solid;
+  padding: 17px 25px;
+  border-image-slice: 50 45 50 45 fill;
+  border-image-width: 12px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: stretch stretch;
+  background-clip: border-box;
+  border-image-source: url("/navbars/slytherin-navbar.png");
+}
+
+.huffelpuff-navbar {
+  position: relative;
+  border-style: solid;
+  padding: 17px 25px;
+  border-image-slice: 50 45 50 45 fill;
+  border-image-width: 12px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: stretch stretch;
+  background-clip: border-box;
+  border-image-source: url("/navbars/hufferpuf-navbar.png");
+}

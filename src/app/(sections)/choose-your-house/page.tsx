@@ -10,8 +10,10 @@ import { useState } from "react";
 import StoryContainer from "@/components/sorting-hat-storytelling/StoryContainer";
 import Caracter from "@/components/houseCaracters/Caracter";
 import { useRouter } from "next/navigation";
+import { useThemeStore } from "@/store/theme/themeStore";
 
 const HousePicks = () => {
+  const { setTheme } = useThemeStore();
   const router = useRouter();
   const [displayMessage, setDisplayMessage] = useState(true);
   const [caracter, setCaracter] = useState("Mudblood");
@@ -93,7 +95,10 @@ const HousePicks = () => {
                 <HouseCardContainer
                   houseName="Gryffindor"
                   houseImage={griffendor}
-                  onClick={() => handleChoosingAHouse("Gryffindor")}
+                  onClick={() => {
+                    handleChoosingAHouse("Gryffindor");
+                    setTheme("gryffindor-theme");
+                  }}
                 />
               </motion.div>
 
@@ -104,7 +109,10 @@ const HousePicks = () => {
                 <HouseCardContainer
                   houseName="Hufflepuff"
                   houseImage={hupperpuf}
-                  onClick={() => handleChoosingAHouse("Hufflepuff")}
+                  onClick={() => {
+                    handleChoosingAHouse("Hufflepuff");
+                    setTheme("hufflepuff-theme");
+                  }}
                 />
               </motion.div>
               <motion.div
@@ -114,7 +122,10 @@ const HousePicks = () => {
                 <HouseCardContainer
                   houseName="Ravenclaw"
                   houseImage={ravenclaw}
-                  onClick={() => handleChoosingAHouse("Ravenclaw")}
+                  onClick={() => {
+                    handleChoosingAHouse("Ravenclaw");
+                    setTheme("ravenclaw-theme");
+                  }}
                 />
               </motion.div>
               <motion.div
@@ -124,7 +135,10 @@ const HousePicks = () => {
                 <HouseCardContainer
                   houseName="Slytherin"
                   houseImage={slytherin}
-                  onClick={() => handleChoosingAHouse("Slytherin")}
+                  onClick={() => {
+                    handleChoosingAHouse("Slytherin");
+                    setTheme("slytherin-theme");
+                  }}
                 />
               </motion.div>
             </motion.div>

@@ -1,26 +1,18 @@
 "use client";
 import "./testcss.css";
-import { motion } from "framer-motion";
-import { useState } from "react";
 
 const TheTest = () => {
-  const [taller, setTaller] = useState(false);
-
   return (
-    <div className="content-mask bg-red-500 h-full">
-      <motion.div
-        className="card w-60 h-6"
-        whileHover={{
-          height: "400px",
-          transition: {
-            duration: 1,
-            ease: "easeInOut",
-          },
-        }}
-      >
-        aze
-      </motion.div>
-      <div className="card w-48 h-[400px]">aze</div>
+    <div className=" bg-white h-full flex flex-col gap-3 pl-3 pt-3 pr-3">
+      <div className="gryffindor-btn">button</div>
+      <div className="ravenclaw-btn">button</div>
+      <div className="slytherin-btn">button</div>
+      <div className="huffelpuff-btn">button</div>
+
+      <div className="gryffindor-navbar">navbar</div>
+      <div className="ravenclaw-navbar">navbar</div>
+      <div className="slytherin-navbar">navbar</div>
+      <div className="huffelpuff-navbar">navbar</div>
     </div>
   );
 };

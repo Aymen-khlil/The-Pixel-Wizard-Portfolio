@@ -4,8 +4,29 @@ import Link from "next/link";
 import "./navbar.css";
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
+import { useThemeStore } from "@/store/theme/themeStore";
+import { cn } from "@/lib/cn";
 const Navbar = () => {
   const pathname = usePathname();
+  const { theme } = useThemeStore();
+  const themeSwitcher = () => {
+    switch (theme) {
+      case "gryffindor-theme":
+        return "gryffindor-banner";
+
+      case "slytherin-theme":
+        return "slytherin-banner";
+
+      case "ravenclaw-theme":
+        return "ravenclaw-banner";
+
+      case "hufflepuff-theme":
+        return "huffelpuff-banner";
+
+      default:
+        return "banner";
+    }
+  };
 
   const whichRoute = () => {
     switch (pathname) {
@@ -38,7 +59,12 @@ const Navbar = () => {
         ease: "easeInOut",
       }}
     >
-      <div className="banner flex items-center justify-center w-full">
+      <div
+        className={cn(
+          themeSwitcher(),
+          "flex items-center justify-center w-full"
+        )}
+      >
         <div className="navbar-title w-[60%] uppercase hidden md:block">
           {whichRoute()}
         </div>

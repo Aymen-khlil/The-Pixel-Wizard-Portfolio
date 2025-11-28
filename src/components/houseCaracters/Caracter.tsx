@@ -13,33 +13,21 @@ import mudblood from "./images/Mudblood-pixalated.png";
 
 import { motion } from "framer-motion";
 import "./caracter.css";
+import { useThemeStore } from "@/store/theme/themeStore";
 
 const Caracter = ({ caracterImage }: { caracterImage: string }) => {
-  // const whichCaracter = () => {
-  //   switch (caracterImage) {
-  //     case "Gryffindor":
-  //       return griffendor;
-  //     case "Hufflepuff":
-  //       return hupperpuf;
-  //     case "Ravenclaw":
-  //       return ravenclaw;
-  //     case "Slytherin":
-  //       return slytherin;
-  //     default:
-  //       return mudblood;
-  //   }
-  // };
+  const { theme } = useThemeStore();
 
   const whichCaracter = () => {
-    switch (caracterImage) {
-      case "Gryffindor":
+    switch (theme) {
+      case "gryffindor-theme":
         return griffendor;
-      case "Hufflepuff":
-        return hupperpuf;
-      case "Ravenclaw":
-        return ravenclaw;
-      case "Slytherin":
+      case "slytherin-theme":
         return slytherin;
+      case "ravenclaw-theme":
+        return ravenclaw;
+      case "hufflepuff-theme":
+        return hupperpuf;
       default:
         return mudblood;
     }
