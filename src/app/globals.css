@@ -143,6 +143,66 @@ a {
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+
+  /* No theme */
+  --noTheme-primary: #b94e1c;
+  --noTheme-secondary: #b94e1c;
+  --noTheme-border: #e0b76f;
+  --noTheme-text: #7f3313;
+
+  /* Gryffindor */
+  --gryff-primary: #e0b76f;
+  --gryff-secondary: #ae0001;
+  --gryff-border: #ae0001;
+  --gryff-text: #d3a625;
+
+  /* Slytherin */
+  --slyth-primary: #c8c9ca;
+  --slyth-secondary: #1a472a;
+  --slyth-border: #1a472a;
+  --slyth-text: #8f9393;
+
+  /* Ravenclaw */
+  --rav-primary: #0e1a40;
+  --rav-secondary: #222f5b;
+  --rav-border: #b58a63;
+  --rav-text: #1a2238;
+
+  /* Hufflepuff */
+  --huff-primary: #ecb11a;
+  --huff-secondary: #f0c75e;
+  --huff-border: #726255;
+  --huff-text: #372e29;
+}
+
+.no-theme {
+  --navbar-title: var(--noTheme-text);
+  --navbar-action: var(--noTheme-primary);
+  --navbar-highlight: var(--noTheme-border);
+}
+
+.gryffindor-theme {
+  --navbar-title: var(--gryff-text);
+  --navbar-action: var(--gryff-primary);
+  --navbar-highlight: var(--gryff-border);
+}
+
+.slytherin-theme {
+  --navbar-title: var(--slyth-text);
+  --navbar-action: var(--slyth-primary);
+  --navbar-highlight: var(--slyth-border);
+}
+
+.ravenclaw-theme {
+  --navbar-title: var(--rav-text);
+  --navbar-action: var(--rav-primary);
+  --navbar-highlight: var(--rav-border);
+}
+
+.hufflepuff-theme {
+  --navbar-title: var(--huff-text);
+  --navbar-action: var(--huff-primary);
+  --navbar-highlight: var(--huff-border);
 }
 
 .dark {

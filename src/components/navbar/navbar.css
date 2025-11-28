@@ -60,26 +60,32 @@
 
 .navbar-title {
   text-align: center;
-  color: #7f3313;
+  color: var(--navbar-title);
 }
 
 .navbar-action {
   font-size: 12px;
-  color: #b94e1c;
-  text-shadow: 0.5px 0.5px 0 #fba658;
+  color: var(--navbar-action);
+  text-shadow: 0.5px 0.5px 0 var(--navbar-highlight);
 }
 
 .navbar-action:hover {
-  color: #b94e1c;
-  text-shadow: -0.5px -0.5px 2px #fba658, 0.5px -0.5px 2px #fba658,
-    -0.5px 0.5px 2px #fba658, 0.5px 0.5px 2px #fba658, -0.5px 0 2px #fba658,
-    0.5px 0 2px #fba658, 0 -0.5px 2px #fba658, 0 0.5px 2px #fba658;
+  color: var(--navbar-action);
+  text-shadow: -0.5px -0.5px 2px var(--navbar-highlight),
+    0.5px -0.5px 2px var(--navbar-highlight),
+    -0.5px 0.5px 2px var(--navbar-highlight),
+    0.5px 0.5px 2px var(--navbar-highlight),
+    -0.5px 0 2px var(--navbar-highlight), 0.5px 0 2px var(--navbar-highlight),
+    0 -0.5px 2px var(--navbar-highlight), 0 0.5px 2px var(--navbar-highlight);
 }
 
 .action-active {
   font-size: 12px;
-  color: #b94e1c;
-  text-shadow: -0.5px -0.5px 2px #fba658, 0.5px -0.5px 2px #fba658,
-    -0.5px 0.5px 2px #fba658, 0.5px 0.5px 2px #fba658, -0.5px 0 2px #fba658,
-    0.5px 0 2px #fba658, 0 -0.5px 2px #fba658, 0 0.5px 2px #fba658;
+  color: var(--navbar-action);
+  text-shadow: -0.5px -0.5px 2px var(--navbar-highlight),
+    0.5px -0.5px 2px var(--navbar-highlight),
+    -0.5px 0.5px 2px var(--navbar-highlight),
+    0.5px 0.5px 2px var(--navbar-highlight),
+    -0.5px 0 2px var(--navbar-highlight), 0.5px 0 2px var(--navbar-highlight),
+    0 -0.5px 2px var(--navbar-highlight), 0 0.5px 2px var(--navbar-highlight);
 }
