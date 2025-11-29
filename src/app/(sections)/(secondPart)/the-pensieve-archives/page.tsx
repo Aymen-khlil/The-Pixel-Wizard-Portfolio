@@ -2,6 +2,7 @@
 import Navbar from "@/components/navbar/Navbar";
 import "./experience.css";
 import ExperienceContainer from "@/components/experienceTrail/ExperienceContainer";
+import Caracter from "@/components/houseCaracters/Caracter";
 
 const Experiences = () => {
   return (
@@ -9,7 +10,10 @@ const Experiences = () => {
       <div className="lg:px-40">
         <Navbar />
       </div>
-      <div className="flex-1 h-full  flex justify-center my-10 lg:px-40 overflow-auto">
+      <div className="flex-1 h-full  flex justify-center my-10 lg:px-40 overflow-auto bg-red-500">
+        <div className="bg-green-500 flex items-center">
+          <Caracter />
+        </div>
         <ExperienceContainer />
       </div>
     </div>

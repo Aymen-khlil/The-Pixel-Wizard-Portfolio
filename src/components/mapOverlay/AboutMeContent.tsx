@@ -33,7 +33,7 @@ const AboutMeContent = () => {
             </div>
 
             <div className="flex items-center justify-center">
-              <Caracter caracterImage="" />
+              <Caracter />
             </div>
           </motion.div>
           <motion.div

@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import "./button.css";
 import { cn } from "@/lib/cn";
 import { useThemeStore } from "@/store/theme/themeStore";
+import { motion } from "framer-motion";
 
 const ActionButton = ({
   children,
@@ -31,9 +32,20 @@ const ActionButton = ({
   };
 
   return (
-    <button className={cn(themeSwitcher(), "action-text")} onClick={onClick}>
-      {children}
-    </button>
+    <motion.div
+      className="  active:scale-[0.9]"
+      initial={{ opacity: 0, scale: 1.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        delay: 4,
+        duration: 1,
+        ease: "easeInOut",
+      }}
+    >
+      <button className={cn(themeSwitcher(), "action-text")} onClick={onClick}>
+        {children}
+      </button>
+    </motion.div>
   );
 };
 

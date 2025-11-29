@@ -37,19 +37,9 @@ const StoryContainer = ({
         </button>
       </div>
       {displayBtn && (
-        <motion.div
-          key={hatMessage}
-          className="absolute -bottom-4  active:scale-[0.9]"
-          initial={{ opacity: 0, scale: 1.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            delay: 4,
-            duration: 1,
-            ease: "easeInOut",
-          }}
-        >
+        <div key={hatMessage} className="absolute -bottom-4  ">
           <ActionButton onClick={continueAction}> Continue </ActionButton>
-        </motion.div>
+        </div>
       )}
     </motion.div>
   );

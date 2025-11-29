@@ -33,7 +33,7 @@ export default function HomePage() {
     <section
       className="h-screen  flex flex-col items-center justify-center text-center overflow-auto "
       style={{
-        backgroundImage: hideContent ? "" : "url('/hogwarts.png')",
+        backgroundImage: hideContent ? "" : "url('/backgrounds/hogwarts.png')",
         backgroundSize: "cover",
         backgroundPosition: "center center",
         backgroundRepeat: "no-repeat",

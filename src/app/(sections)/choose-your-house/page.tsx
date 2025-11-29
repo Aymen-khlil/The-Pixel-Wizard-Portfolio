@@ -16,9 +16,9 @@ const HousePicks = () => {
   const { setTheme } = useThemeStore();
   const router = useRouter();
   const [displayMessage, setDisplayMessage] = useState(true);
-  const [caracter, setCaracter] = useState("Mudblood");
+
   const [hatMessage, setHatMessage] = useState(
-    "Well well well… another confused human. Let's find you a house before you break something."
+    "Well well well… another confused human. Let's find you a house before you get lost."
   );
   const [displayBtn, setDisplayBtn] = useState(false);
 
@@ -31,7 +31,6 @@ const HousePicks = () => {
   };
 
   const handleChoosingAHouse = (house: string) => {
-    setCaracter(house);
     setHatMessage(houseMessages[house] || "Interesting… very interesting.");
     setDisplayMessage(true);
     setDisplayBtn(true);
@@ -50,7 +49,7 @@ const HousePicks = () => {
       <div className="grid grid-cols-1 lg:grid-cols-2 w-full">
         <div className="lg:h-full w-full flex flex-col ">
           <div className="flex  items-end justify-center lg:h-[80%] pt-8 lg:pt-0 ">
-            <Caracter caracterImage={caracter} />
+            <Caracter />
           </div>
 
           <AnimatePresence mode={displayMessage ? "wait" : "sync"}>

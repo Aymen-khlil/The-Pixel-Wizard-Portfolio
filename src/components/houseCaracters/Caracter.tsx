@@ -15,7 +15,7 @@ import { motion } from "framer-motion";
 import "./caracter.css";
 import { useThemeStore } from "@/store/theme/themeStore";
 
-const Caracter = ({ caracterImage }: { caracterImage: string }) => {
+const Caracter = () => {
   const { theme } = useThemeStore();
 
   const whichCaracter = () => {
@@ -35,7 +35,7 @@ const Caracter = ({ caracterImage }: { caracterImage: string }) => {
 
   return (
     <motion.div
-      key={caracterImage} // IMPORTANT for re-animation on change
+      key={theme} // IMPORTANT for re-animation on change
       initial={{ opacity: 0, y: -30 }} // when entering
       animate={{
         opacity: 1,
@@ -54,7 +54,7 @@ const Caracter = ({ caracterImage }: { caracterImage: string }) => {
           ease: "easeInOut",
         }}
       >
-        <Image src={whichCaracter()} alt={caracterImage} />
+        <Image src={whichCaracter()} alt={theme} />
       </motion.div>
     </motion.div>
   );

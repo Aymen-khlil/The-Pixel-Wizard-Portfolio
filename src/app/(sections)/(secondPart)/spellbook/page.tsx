@@ -7,8 +7,11 @@ import SpellHolder from "@/components/spellbook/SpellHolder";
 import SpellHolderLeft from "@/components/spellbook/SpellHolderLeft";
 import SpellHolderRight from "@/components/spellbook/SpellHolderRight";
 import { motion } from "framer-motion";
+import ActionButton from "@/components/button/ActionButton";
+import { useRouter } from "next/navigation";
 
 const Spellbook = () => {
+  const router = useRouter();
   const frontendSpells = [
     "React",
     "Vite",
@@ -55,9 +58,8 @@ const Spellbook = () => {
       <div className="lg:px-40">
         <Navbar />
       </div>
-
-      <div className="flex-1 flex items-center justify-center px-6 md:px-12 lg:px-24 py-12">
-        <div className="w-full max-w-7xl flex gap-6 items-stretch justify-center flex-wrap">
+      <div className="flex-1 flex flex-col items-center justify-center px-6 md:px-12 lg:px-24 py-12 ">
+        <div className="w-full max-w-7xl flex gap-6 items-stretch justify-center flex-wrap ">
           <motion.div
             className="flex-1"
             initial={{ opacity: 0, y: -20 }}
@@ -94,7 +96,6 @@ const Spellbook = () => {
               </motion.div>
             </SpellHolderLeft>
           </motion.div>
-
           <motion.div
             className="flex-1"
             initial={{ opacity: 0, y: -20 }}
@@ -131,7 +132,6 @@ const Spellbook = () => {
               </motion.div>
             </SpellHolder>
           </motion.div>
-
           <motion.div
             className="flex-1"
             initial={{ opacity: 0, y: -20 }}
@@ -168,6 +168,15 @@ const Spellbook = () => {
               </motion.div>
             </SpellHolderRight>
           </motion.div>
+        </div>
+        <div className="pt-3">
+          <ActionButton
+            onClick={() => {
+              router.push("/the-pensieve-archives");
+            }}
+          >
+            Continue
+          </ActionButton>
         </div>
       </div>
     </div>

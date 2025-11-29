@@ -1,11 +1,9 @@
-"use client";
-
 import type { Metadata } from "next";
 import { Press_Start_2P, Geist_Mono, Beth_Ellen } from "next/font/google";
 import "./globals.css";
 import PixelTraillWrapper from "@/components/pixelTrails/pixelTraillWrapper";
-import { useEffect } from "react";
-import { useThemeStore } from "@/store/theme/themeStore";
+
+import ThemeLoader from "./ThemeLoader";
 
 export const geistSans = Press_Start_2P({
   subsets: ["latin"],
@@ -22,20 +20,16 @@ export const geistBeth = Beth_Ellen({
   weight: "400",
 });
 
-// export const metadata: Metadata = {
-//   title: "Aymen Khlil - Portfolio",
-//   description: "Welcome to my hogwarts",
-// };
+export const metadata: Metadata = {
+  title: "Aymen Khlil - The Pixel Wizard Portfolio",
+  description: "Welcome to my hogwarts",
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const { loadTheme } = useThemeStore();
-  useEffect(() => {
-    loadTheme();
-  }, [loadTheme]);
   return (
     <html lang="en">
       <head>
@@ -50,7 +44,7 @@ export default function RootLayout({
         className={`${geistSans.className} ${geistMono.variable} h-screen    overflow-auto`}
       >
         <PixelTraillWrapper key={"Trailing"} />
-        {children}
+        <ThemeLoader>{children}</ThemeLoader>
       </body>
     </html>
   );
