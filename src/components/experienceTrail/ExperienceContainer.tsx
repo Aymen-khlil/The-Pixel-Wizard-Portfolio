@@ -2,6 +2,7 @@ import "./experienceTrail.css";
 import ExperienceCard from "./ExperienceCard";
 import Image from "next/image";
 import ExpWand from "./images/exp-wand.png";
+import ActionButton from "../button/ActionButton";
 
 // Sample experience data - replace with your actual data
 const experiences = [
@@ -120,7 +121,7 @@ const experiences = [
 const ExperienceContainer = () => {
   return (
     <div className="  h-full flex flex-col">
-      <div className="relative flex justify-center flex-col items-center py-  overflow-y-auto flex-1">
+      <div className="relative flex justify-center flex-col items-center   overflow-y-auto flex-1">
         <Image
           src={ExpWand}
           alt="Wand"
@@ -128,7 +129,7 @@ const ExperienceContainer = () => {
           height={24}
           className="absolute left-0 top-0 hidden lg:block"
         />
-        <div className="experience-container z-10 overflow-y-auto scroll max-h-screen w-full space-y-7 pr-20 pb-10">
+        <div className="experience-container z-10 overflow-y-auto scroll max-h-screen w-full space-y-7 lg:pr-20 pb-10 ">
           {experiences.map((exp, index) => (
             <ExperienceCard
               isLast={index === experiences.length - 1}
@@ -139,6 +140,9 @@ const ExperienceContainer = () => {
             />
           ))}
         </div>
+      </div>
+      <div className=" flex   justify-center">
+        <ActionButton>Continue</ActionButton>
       </div>
     </div>
   );

@@ -35,7 +35,7 @@ const Caracter = () => {
 
   return (
     <motion.div
-      key={theme} // IMPORTANT for re-animation on change
+      key={theme || "no-theme"} // IMPORTANT for re-animation on change
       initial={{ opacity: 0, y: -30 }} // when entering
       animate={{
         opacity: 1,

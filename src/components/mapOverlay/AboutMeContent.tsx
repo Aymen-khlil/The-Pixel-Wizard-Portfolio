@@ -6,9 +6,11 @@ import ActionButton from "../button/ActionButton";
 import { AnimatePresence, motion } from "framer-motion";
 import Plume from "../button/Plume";
 import { useRouter } from "next/navigation";
+import { useThemeStore } from "@/store/theme/themeStore";
 
 const AboutMeContent = () => {
   const router = useRouter();
+  const { theme } = useThemeStore();
   return (
     <div className="flex flex-col h-full  lg:px-40 overflow-y-auto">
       <Navbar />
@@ -48,7 +50,7 @@ const AboutMeContent = () => {
             className="col-span-4  flex items-center"
           >
             <div className="scroll-about w-full max-h-full">
-              <div className="text-[11px] space-y-4 overflow-y-auto">
+              <div className="text-[11px] space-y-4 overflow-y-auto pl-1">
                 <p>
                   I’m a flexible and passionate developer transitioning from
                   frontend to full-stack. Nearly 2 years experience in creating
@@ -71,7 +73,7 @@ const AboutMeContent = () => {
                   work with.
                 </p>
                 <div>
-                  <p className="title-about-me">
+                  <p className="title-about-me pl-1">
                     What can i bring to the table
                   </p>
                   <div className="space-y-4 pt-2">
@@ -140,6 +142,7 @@ const AboutMeContent = () => {
                   <Plume />
                 </motion.div>
                 <motion.div
+                  key={theme || "no-theme"}
                   className="active:scale-[0.9]"
                   initial={{ opacity: 0, scale: 1.1 }}
                   animate={{ opacity: 1, scale: 1 }}
@@ -149,7 +152,10 @@ const AboutMeContent = () => {
                     ease: "easeInOut",
                   }}
                 >
-                  <ActionButton onClick={() => router.push("/spellbook")}>
+                  <ActionButton
+                    key={theme || "no-theme"}
+                    onClick={() => router.push("/spellbook")}
+                  >
                     Continue
                   </ActionButton>
                 </motion.div>

@@ -10,8 +10,8 @@ const Experiences = () => {
       <div className="lg:px-40">
         <Navbar />
       </div>
-      <div className="flex-1 h-full  flex justify-center my-10 lg:px-40 overflow-auto bg-red-500">
-        <div className="bg-green-500 flex items-center">
+      <div className="flex-1 h-full  flex justify-center my-10 lg:px-40 overflow-auto lg:gap-20">
+        <div className=" items-center hidden lg:flex ">
           <Caracter />
         </div>
         <ExperienceContainer />

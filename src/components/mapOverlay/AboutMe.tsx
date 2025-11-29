@@ -126,7 +126,7 @@ export default function AboutMe() {
         {/* REVEALED PAGE */}
         {revealPage && (
           <motion.div
-            key="page3"
+            key="aboutmeContent"
             initial={{ opacity: 1 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}

@@ -24,7 +24,7 @@ const StoryContainer = ({
           <Image src={sortingHat} alt="Sorting hat" width={50} height={50} />
         </motion.div>
         <motion.div className=" text-[12px] sm:text-sm  col-span-6 ">
-          <TextType key={hatMessage} text={hatMessage} />
+          <TextType key={hatMessage || "default-message"} text={hatMessage} />
         </motion.div>
       </motion.div>
 
@@ -37,8 +37,14 @@ const StoryContainer = ({
         </button>
       </div>
       {displayBtn && (
-        <div key={hatMessage} className="absolute -bottom-4  ">
-          <ActionButton onClick={continueAction}> Continue </ActionButton>
+        <div
+          key={hatMessage || "default-message-btn"}
+          className="absolute -bottom-4  "
+        >
+          <ActionButton delayAnimation={4} onClick={continueAction}>
+            {" "}
+            Continue{" "}
+          </ActionButton>
         </div>
       )}
     </motion.div>

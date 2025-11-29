@@ -51,7 +51,7 @@ const ExperienceCard = ({
 
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
     // When latest > 0, the card center has crossed the viewport center
-    setIsAtCenter(latest > 0.1);
+    setIsAtCenter(latest > 0.2);
   });
 
   const contentOpacity = useTransform(
@@ -119,10 +119,10 @@ const ExperienceCard = ({
               style={{ opacity: contentOpacity }}
               className="px-2 py-6  h-full"
             >
-              <p className="text- font-semibold  mb-2 text-[#7f3313] text-center">
+              <p className="text- font-semibold  mb-2 text-[var(--navbar-action)] text-center">
                 {title}
               </p>
-              <div className="text-sm ">{description}</div>
+              <div className="text-sm">{description}</div>
             </motion.div>
           </motion.div>
         )}

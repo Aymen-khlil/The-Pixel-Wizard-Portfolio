@@ -7,9 +7,11 @@ import { motion } from "framer-motion";
 const ActionButton = ({
   children,
   onClick,
+  delayAnimation = 0,
 }: {
   children: ReactNode;
   onClick?: () => void;
+  delayAnimation?: number;
 }) => {
   const { theme } = useThemeStore();
   const themeSwitcher = () => {
@@ -37,7 +39,7 @@ const ActionButton = ({
       initial={{ opacity: 0, scale: 1.5 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{
-        delay: 4,
+        delay: delayAnimation,
         duration: 1,
         ease: "easeInOut",
       }}
