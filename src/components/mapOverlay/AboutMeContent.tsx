@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Caracter from "../houseCaracters/Caracter";
 import Navbar from "../navbar/Navbar";
-import harryScar from "./images/harry-scar.png";
+import harryScar from "../../../public/mapOverlay/harry-scar.png";
 import ActionButton from "../button/ActionButton";
 import { AnimatePresence, motion } from "framer-motion";
 import Plume from "../button/Plume";

@@ -5,11 +5,11 @@ import Image from "next/image";
 // import slytherin from "./images/Slytherin.png";
 // import mudblood from "./images/Mudblood.png";
 
-import griffendor from "./images/Griffindor-pixalated.png";
-import hupperpuf from "./images/Hufflepuff-pixalated.png";
-import ravenclaw from "./images/Ravenclaw-pixalated.png";
-import slytherin from "./images/Slytherin-pixalated.png";
-import mudblood from "./images/Mudblood-pixalated.png";
+import griffendor from "../../../public/houseCaracters/Griffindor-pixalated.png";
+import hupperpuf from "../../../public/houseCaracters/Hufflepuff-pixalated.png";
+import ravenclaw from "../../../public/houseCaracters/Ravenclaw-pixalated.png";
+import slytherin from "../../../public/houseCaracters/Slytherin-pixalated.png";
+import mudblood from "../../../public/houseCaracters/Mudblood-pixalated.png";
 
 import { motion } from "framer-motion";
 import "./caracter.css";

@@ -7,8 +7,8 @@ import {
   useScroll,
   useTransform,
 } from "framer-motion";
-import OffGem from "./images/off-gem.png";
-import OnGem from "./images/on-gem.png";
+import OffGem from "../../../public/experience/off-gem.png";
+import OnGem from "../../../public/experience/on-gem.png";
 import { useRef, useState, useEffect } from "react";
 import { useWindowSize } from "../../lib/detectscreen";
 
@@ -99,7 +99,9 @@ const ExperienceCard = ({
             ref={cardRef}
             className="experience-card  max-w-[500px] min-w-[350px] overflow-hidden h-6 flex items-center justify-center "
           >
-            <div className="text-white">Coming Soon</div>
+            <div className=" text-[var(--navbar-highlight)]">
+              Next Adventure
+            </div>
           </div>
         ) : (
           <motion.div
@@ -119,7 +121,7 @@ const ExperienceCard = ({
               style={{ opacity: contentOpacity }}
               className="px-2 py-6  h-full"
             >
-              <p className="text- font-semibold  mb-2 text-[var(--navbar-action)] text-center">
+              <p className="text- font-semibold  mb-2 text-[var(--navbar-highlight)] text-center">
                 {title}
               </p>
               <div className="text-sm">{description}</div>

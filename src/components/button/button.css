@@ -135,7 +135,7 @@
   border-image-width: 14px;
   border-image-outset: 0px 0px 0px 0px;
   border-image-repeat: stretch stretch;
-  border-image-source: url("./qs.png");
+  border-image-source: url("/buttons/qs.png");
 }
 
 .gryffindor-btn {

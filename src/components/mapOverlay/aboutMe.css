@@ -8,7 +8,7 @@
   inset: 0;
   position: absolute;
   background-color: black;
-  mask-image: url("./images/loopingGif.gif");
+  mask-image: url("/mapOverlay/loopingGif.gif");
   mask-size: cover;
   mask-position: center;
   mask-repeat: no-repeat;
@@ -44,7 +44,7 @@
   position: relative;
   border-style: solid;
   padding: 17px 25px;
-  border-image-source: url("./images/openedScroll.png");
+  border-image-source: url("/mapOverlay/openedScroll.png");
   border-image-slice: 62 87 65 87 fill;
   border-image-width: 18px;
   border-image-outset: 0px 0px 0px 0px;

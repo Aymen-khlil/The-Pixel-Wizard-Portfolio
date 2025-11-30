@@ -9,7 +9,7 @@
   border-image-width: 15px 15px 15px 15px;
   border-image-outset: 0px 0px 0px 0px;
   border-image-repeat: stretch stretch;
-  border-image-source: url("./images/cardContainer.png");
+  border-image-source: url("/houseCards/cardContainer.png");
 }
 
 /* Small screens (sm: 640px and up) */

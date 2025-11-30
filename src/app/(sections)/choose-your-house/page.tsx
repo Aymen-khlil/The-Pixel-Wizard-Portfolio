@@ -1,10 +1,10 @@
 "use client";
 
 import HouseCardContainer from "@/components/houseCards/HouseCardContainer";
-import griffendor from "../../../components/houseCards/images/Griffindor-logo.png";
-import hupperpuf from "../../../components/houseCards/images/Hupperpuf-logo.png";
-import ravenclaw from "../../../components/houseCards/images/Ravenclaw-logo.png";
-import slytherin from "../../../components/houseCards/images/Slytherin-logo.png";
+import griffendor from "../../../../public/houseCards/Griffindor-logo.png";
+import hupperpuf from "../../../../public/houseCards/Hupperpuf-logo.png";
+import ravenclaw from "../../../../public/houseCards/Ravenclaw-logo.png";
+import slytherin from "../../../../public/houseCards/Slytherin-logo.png";
 import { AnimatePresence, motion, MotionConfig } from "framer-motion";
 import { useState } from "react";
 import StoryContainer from "@/components/sorting-hat-storytelling/StoryContainer";

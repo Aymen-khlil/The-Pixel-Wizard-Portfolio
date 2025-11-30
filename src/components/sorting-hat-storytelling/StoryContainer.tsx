@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import "./storyTelling.css";
-import sortingHat from "./images/sorting-hat.png";
+import sortingHat from "../../../public/sortingHat/sorting-hat.png";
 import TextType from "../TextType";
 import { Dispatch, SetStateAction } from "react";
 import ActionButton from "../button/ActionButton";

@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import "./button.css";
 
-import plume from "./plume.png";
+import plume from "../../../public/buttons/plume.png";
 import { BrowserView, MobileView } from "react-device-detect";
 
 const Plume = () => {

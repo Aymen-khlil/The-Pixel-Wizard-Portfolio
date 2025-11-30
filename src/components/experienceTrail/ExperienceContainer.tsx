@@ -1,8 +1,9 @@
 import "./experienceTrail.css";
 import ExperienceCard from "./ExperienceCard";
 import Image from "next/image";
-import ExpWand from "./images/exp-wand.png";
+import ExpWand from "../../../public/experience/exp-wand.png";
 import ActionButton from "../button/ActionButton";
+import harryScar from "./images/harry-scar.png";
 
 // Sample experience data - replace with your actual data
 const experiences = [

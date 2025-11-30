@@ -35,7 +35,7 @@ export default function RootLayout({
       <head>
         <link
           rel="preload"
-          href="../components/mapOverlay/images/gifTwo.gif"
+          href="/mapOverlay/loopingGif.gif"
           as="image"
           type="image/gif"
         />
