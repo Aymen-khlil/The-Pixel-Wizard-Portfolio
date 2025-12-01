@@ -1,0 +1,13 @@
+.owlery-input {
+  border-image-slice: 19 19 19 19 fill;
+  border-image-width: 14px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: stretch stretch;
+  border-image-source: url("/inputs/inputBorder.png");
+  font-size: 10px;
+  padding: 10px 15px;
+}
+
+.owlery-input:focus {
+  outline: none;
+}

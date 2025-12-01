@@ -3,9 +3,8 @@ import ExperienceCard from "./ExperienceCard";
 import Image from "next/image";
 import ExpWand from "../../../public/experience/exp-wand.png";
 import ActionButton from "../button/ActionButton";
-import harryScar from "./images/harry-scar.png";
+import harryScar from "../../../public/mapOverlay/harry-scar.png";
 
-// Sample experience data - replace with your actual data
 const experiences = [
   {
     title: "FRONT-END DEVELOPER INTERN",
@@ -25,13 +24,34 @@ const experiences = [
         </div>
         <div className="text-[10px] pt-1">
           <ul className="pl-3 space-y-2">
-            <li>
-              - Developed e-commerce platform with COD payment for drop-shippers
-              and internal employee management web app.
+            <li className="flex gap-2 ">
+              <div className="shrink-0">
+                <Image
+                  src={harryScar}
+                  width={15}
+                  height={15}
+                  alt="Harry scar"
+                />
+              </div>
+              <p>
+                {" "}
+                Developed e-commerce platform with COD payment for drop-shippers
+                and internal employee management web app.
+              </p>
             </li>
-            <li>
-              - Converted UI/UX wireframes from Zeplin into high-quality,
-              responsive code.
+            <li className="flex gap-2">
+              <div className="shrink-0">
+                <Image
+                  src={harryScar}
+                  width={15}
+                  height={15}
+                  alt="Harry scar"
+                />
+              </div>
+              <p>
+                Converted UI/UX wireframes from Zeplin into high-quality,
+                responsive code.
+              </p>
             </li>
           </ul>
         </div>
@@ -57,19 +77,73 @@ const experiences = [
         </div>
         <div className="text-[10px] pt-1">
           <ul className="pl-3 space-y-2">
-            <li>
-              - Implemented clean UI with Tailwind, tailwind-merge, clsx, and
+            <li className="flex gap-2">
+              <div className="shrink-0">
+                <Image
+                  src={harryScar}
+                  width={15}
+                  height={15}
+                  alt="Harry scar"
+                />
+              </div>{" "}
+              Implemented clean UI with Tailwind, tailwind-merge, clsx, and
               managed global state with Zustand.
             </li>
-            <li>
-              - Created data visualizations with Recharts and FullCalendar.
+            <li className="flex gap-2">
+              <div className="shrink-0">
+                <Image
+                  src={harryScar}
+                  width={15}
+                  height={15}
+                  alt="Harry scar"
+                />
+              </div>{" "}
+              Created data visualizations with Recharts and FullCalendar.
             </li>
-            <li>- Managed forms with Formik and validation with Yup.</li>
-            <li>- Converted UI/UX wireframes into responsive code.</li>
-            <li>
-              - Maintained web applications for performance and scalability.
+            <li className="flex gap-2">
+              <div className="shrink-0">
+                <Image
+                  src={harryScar}
+                  width={15}
+                  height={15}
+                  alt="Harry scar"
+                />
+              </div>{" "}
+              Managed forms with Formik and validation with Yup.
             </li>
-            <li>- Contributed to Jira user stories in an Agile team.</li>
+            <li className="flex gap-2">
+              <div className="shrink-0">
+                <Image
+                  src={harryScar}
+                  width={15}
+                  height={15}
+                  alt="Harry scar"
+                />
+              </div>{" "}
+              Converted UI/UX wireframes into responsive code.
+            </li>
+            <li className="flex gap-2">
+              <div className="shrink-0">
+                <Image
+                  src={harryScar}
+                  width={15}
+                  height={15}
+                  alt="Harry scar"
+                />
+              </div>{" "}
+              Maintained web applications for performance and scalability.
+            </li>
+            <li className="flex gap-2">
+              <div className="shrink-0">
+                <Image
+                  src={harryScar}
+                  width={15}
+                  height={15}
+                  alt="Harry scar"
+                />
+              </div>{" "}
+              Contributed to Jira user stories in an Agile team.
+            </li>
           </ul>
         </div>
       </div>
@@ -93,18 +167,62 @@ const experiences = [
         </div>
         <div className="text-[10px] pt-1">
           <ul className="pl-3 space-y-2">
-            <li>
-              - Integrated ActiveCampaign APIs to automate user creation, list
+            <li className="flex gap-2">
+              <div className="shrink-0">
+                <Image
+                  src={harryScar}
+                  width={15}
+                  height={15}
+                  alt="Harry scar"
+                />
+              </div>{" "}
+              Integrated ActiveCampaign APIs to automate user creation, list
               management, and tagging.
             </li>
-            <li>- Built and maintained RESTful APIs.</li>
-            <li>- Implemented Ticketing Automation with Groove API.</li>
-            <li>
-              - Integrated AI APIs (OpenAI, Anthropic-ai) and Google Ads Keyword
+            <li className="flex gap-2">
+              <div className="shrink-0">
+                <Image
+                  src={harryScar}
+                  width={15}
+                  height={15}
+                  alt="Harry scar"
+                />
+              </div>{" "}
+              Built and maintained RESTful APIs.
+            </li>
+            <li className="flex gap-2">
+              <div className="shrink-0">
+                <Image
+                  src={harryScar}
+                  width={15}
+                  height={15}
+                  alt="Harry scar"
+                />
+              </div>{" "}
+              Implemented Ticketing Automation with Groove API.
+            </li>
+            <li className="flex gap-2">
+              <div className="shrink-0">
+                <Image
+                  src={harryScar}
+                  width={15}
+                  height={15}
+                  alt="Harry scar"
+                />
+              </div>{" "}
+              Integrated AI APIs (OpenAI, Anthropic-ai) and Google Ads Keyword
               Ideas API.
             </li>
-            <li>
-              - Implemented Server-Sent Events (SSE) to push server updates to
+            <li className="flex gap-2">
+              <div className="shrink-0">
+                <Image
+                  src={harryScar}
+                  width={15}
+                  height={15}
+                  alt="Harry scar"
+                />
+              </div>{" "}
+              Implemented Server-Sent Events (SSE) to push server updates to
               clients.
             </li>
           </ul>

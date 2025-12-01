@@ -42,7 +42,7 @@ const Navbar = () => {
       case "/the-pensieve-archives":
         return "The Pensieve Archives";
 
-      case "/the-owlery":
+      case "/send-an-owl":
         return "The Owlery";
 
       default:
@@ -106,9 +106,9 @@ const Navbar = () => {
             Experience
           </Link>
           <Link
-            href={""}
+            href={"/send-an-owl"}
             className={`${
-              pathname === "/the-owlery" ? "action-active" : "navbar-action"
+              pathname === "/send-an-owl" ? "action-active" : "navbar-action"
             } `}
           >
             Contact

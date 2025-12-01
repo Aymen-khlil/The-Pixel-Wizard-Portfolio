@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Caracter from "../houseCaracters/Caracter";
 import Navbar from "../navbar/Navbar";
-import harryScar from "../../../public/mapOverlay/harry-scar.png";
 import ActionButton from "../button/ActionButton";
 import { AnimatePresence, motion } from "framer-motion";
 import Plume from "../button/Plume";
 import { useRouter } from "next/navigation";
 import { useThemeStore } from "@/store/theme/themeStore";
+import goldenSnitch from "../../../public/Golden-Snitch.png";
 
 const AboutMeContent = () => {
   const router = useRouter();
@@ -52,9 +52,9 @@ const AboutMeContent = () => {
             <div className="scroll-about w-full max-h-full">
               <div className="text-[11px] space-y-4 overflow-y-auto pl-1">
                 <p>
-                  I’m a flexible and passionate developer transitioning from
-                  frontend to full-stack. Nearly 2 years experience in creating
-                  web apps.
+                  I&rsquo;m Aymen, a flexible and passionate developer
+                  transitioning from frontend to full-stack. Nearly 2 years
+                  experience in creating web apps.
                 </p>
                 <p>
                   Currently working as a Full-Stack Developer, I’ve contributed
@@ -80,10 +80,10 @@ const AboutMeContent = () => {
                     <div className="flex gap-2  text-[11px] ">
                       <div className="shrink-0">
                         <Image
-                          src={harryScar}
-                          width={15}
-                          height={15}
-                          alt="Harry Scar"
+                          src={goldenSnitch}
+                          width={20}
+                          height={20}
+                          alt="Golden Snitch"
                         />
                       </div>
                       <p>
@@ -95,10 +95,10 @@ const AboutMeContent = () => {
                     <div className="flex gap-2">
                       <div className="shrink-0">
                         <Image
-                          src={harryScar}
-                          width={15}
-                          height={15}
-                          alt="Harry Scar"
+                          src={goldenSnitch}
+                          width={20}
+                          height={20}
+                          alt="Golden Snitch"
                         />
                       </div>
                       <p>
@@ -109,10 +109,10 @@ const AboutMeContent = () => {
                     <div className="flex gap-2">
                       <div className="shrink-0">
                         <Image
-                          src={harryScar}
-                          width={15}
-                          height={15}
-                          alt="Harry Scar"
+                          src={goldenSnitch}
+                          width={20}
+                          height={20}
+                          alt="Golden Snitch"
                         />
                       </div>
                       <p>
@@ -123,10 +123,10 @@ const AboutMeContent = () => {
                     <div className="flex gap-2">
                       <div className="shrink-0">
                         <Image
-                          src={harryScar}
-                          width={15}
-                          height={15}
-                          alt="Harry Scar"
+                          src={goldenSnitch}
+                          width={20}
+                          height={20}
+                          alt="Golden Snitch"
                         />
                       </div>
                       <p>

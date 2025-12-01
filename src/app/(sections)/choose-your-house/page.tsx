@@ -13,14 +13,17 @@ import { useRouter } from "next/navigation";
 import { useThemeStore } from "@/store/theme/themeStore";
 
 const HousePicks = () => {
-  const { setTheme } = useThemeStore();
+  const { setTheme, theme } = useThemeStore();
   const router = useRouter();
   const [displayMessage, setDisplayMessage] = useState(true);
-
-  const [hatMessage, setHatMessage] = useState(
-    "Well well well… another confused human. Let's find you a house before you get lost."
-  );
+  const [customHatMessage, setCustomHatMessage] = useState<string | null>(null);
   const [displayBtn, setDisplayBtn] = useState(false);
+
+  const hatMessage =
+    customHatMessage ||
+    (theme === "no-theme"
+      ? "Well well well… another confused human. Let's find you a house before you get lost."
+      : "Well, by now you used to this, you know the drill.");
 
   const houseMessages: Record<string, string> = {
     Gryffindor: "Ah yes, another hero in training… off to Gryffindor you go!",
@@ -31,7 +34,9 @@ const HousePicks = () => {
   };
 
   const handleChoosingAHouse = (house: string) => {
-    setHatMessage(houseMessages[house] || "Interesting… very interesting.");
+    setCustomHatMessage(
+      houseMessages[house] || "Interesting… very interesting."
+    );
     setDisplayMessage(true);
     setDisplayBtn(true);
   };
