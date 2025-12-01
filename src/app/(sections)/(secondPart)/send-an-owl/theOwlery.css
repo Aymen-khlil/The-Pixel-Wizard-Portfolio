@@ -6,3 +6,16 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.theOwlery-scroll {
+  position: relative;
+  border-style: solid;
+  padding: 100px 40px 70px 50px;
+  border-image-source: url("../../../../../public/owlery/owlScroll.png");
+  border-image-slice: 70 27 60 34 fill;
+  border-image-width: 70px 20px 70px 50px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: stretch stretch;
+  background-clip: border-box;
+  transition: all 0.3s ease;
+}

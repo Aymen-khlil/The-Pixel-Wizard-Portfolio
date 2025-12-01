@@ -205,3 +205,30 @@
   border-image-source: url("/buttons/huffelpuff-btn.png");
   width: 200px;
 }
+
+.owlery-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/buttons/OwlSendBtn.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 85px;
+  width: 85px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  color: #1a1a1a;
+  font-size: 12px;
+}
+
+.owlery-btn:hover {
+  transform: scale(1.05);
+}
+
+.owlery-btn:active {
+  transform: scale(0.95);
+}

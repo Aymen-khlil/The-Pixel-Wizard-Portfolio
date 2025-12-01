@@ -1,7 +1,7 @@
 import { cn } from "@/lib/cn";
 import "./inputs.css";
 
-const OwleryInput = ({
+const OwleryTextArea = ({
   className,
   placeholder,
 }: {
@@ -9,12 +9,12 @@ const OwleryInput = ({
   placeholder?: string;
 }) => {
   return (
-    <input
-      type="text"
-      className={cn("owlery-input w-full", className)}
+    <textarea
+      className={cn("owlery-input", className)}
       placeholder={placeholder}
-    />
+      rows={4}
+    ></textarea>
   );
 };
 
-export default OwleryInput;
+export default OwleryTextArea;
