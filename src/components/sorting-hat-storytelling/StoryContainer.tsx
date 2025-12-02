@@ -3,19 +3,20 @@ import Image from "next/image";
 import "./storyTelling.css";
 import sortingHat from "../../../public/sortingHat/sorting-hat.png";
 import TextType from "../TextType";
-import { Dispatch, SetStateAction } from "react";
 import ActionButton from "../button/ActionButton";
 
 const StoryContainer = ({
   hatMessage,
-  setDisplayMessage,
+
   displayBtn,
   continueAction,
+  onCloseAction,
 }: {
   hatMessage: string;
-  setDisplayMessage: Dispatch<SetStateAction<boolean>>;
+
   displayBtn: boolean;
   continueAction?: () => void;
+  onCloseAction?: () => void;
 }) => {
   return (
     <motion.div className="message-container relative flex flex-col items-center justify-start w-full">
@@ -31,7 +32,7 @@ const StoryContainer = ({
       <div className="absolute -right-2 -top-2 ">
         <button
           className="close-button active:scale-[0.9]"
-          onClick={() => setDisplayMessage(false)}
+          onClick={onCloseAction}
         >
           X
         </button>

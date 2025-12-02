@@ -72,7 +72,7 @@ const HousePicks = () => {
                 <div className="h-full w-[90%] sm:w-[80%]">
                   <StoryContainer
                     hatMessage={hatMessage}
-                    setDisplayMessage={setDisplayMessage}
+                    onCloseAction={() => setDisplayMessage(false)}
                     displayBtn={displayBtn}
                     continueAction={() => router.push("/marauder-map")}
                   />

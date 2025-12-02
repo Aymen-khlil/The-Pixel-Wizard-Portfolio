@@ -1,5 +1,5 @@
 .theOwlery-content {
-  /* Keep this hidden initially */
+  position: relative;
   height: 100vh;
   background-image: url("/backgrounds/theOwleryBackground.png");
   background-position: 100% 100%;
