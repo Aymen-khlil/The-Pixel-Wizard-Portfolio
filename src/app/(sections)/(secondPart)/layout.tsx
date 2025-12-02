@@ -7,12 +7,10 @@ export default function ThirdSectionLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <PageTransition>
-      <div
-        className={`${geistSans.className} ${geistMono.variable} flex flex-col h-screen overflow-auto`}
-      >
-        <div className="flex-1">{children}</div>
-      </div>
-    </PageTransition>
+    <div
+      className={`${geistSans.className} ${geistMono.variable} flex flex-col h-screen overflow-auto`}
+    >
+      <div className="flex-1">{children}</div>
+    </div>
   );
 }

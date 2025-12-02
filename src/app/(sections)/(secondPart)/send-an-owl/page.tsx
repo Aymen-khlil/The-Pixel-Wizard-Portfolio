@@ -7,7 +7,7 @@ const SendAnOwl = () => {
   return (
     <div className="theOwlery-content flex items-center justify-center ">
       <div className="theOwlery-scroll w-[30%] h-[80%] relative">
-        <div className=" h-full w-full flex flex-col gap-5 items-start   ">
+        <div className=" h-full w-full flex flex-col  items-start  space-y-14 ">
           <h1 className="text-center  w-full text-3xl">Send an Owl</h1>
           <div className=" flex-1 flex flex-col gap-5 w-full items-start justify-start ">
             <div className="w-full  flex items-center justify-center">

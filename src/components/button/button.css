@@ -223,6 +223,7 @@
   transition: transform 0.2s ease;
   color: #1a1a1a;
   font-size: 12px;
+  box-shadow: 0 0px 10px #313131;
 }
 
 .owlery-btn:hover {
