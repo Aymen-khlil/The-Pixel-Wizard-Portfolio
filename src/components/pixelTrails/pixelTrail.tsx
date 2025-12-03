@@ -15,7 +15,12 @@ const PixelTrail: React.FC = () => {
   const frameRef = useRef<number>(0);
 
   useEffect(() => {
-    const glowColors = ["#a7e8ff", "#c9f2ff", "#e8fcff"];
+    // const glowColors = ["#a7e8ff", "#c9f2ff", "#e8fcff"];
+    const glowColors = [
+      "var(--navbar-title)",
+      "var(--navbar-action)",
+      "var(--navbar-highlight)",
+    ];
 
     const handleMove = (e: MouseEvent) => {
       cancelAnimationFrame(frameRef.current!);
@@ -40,7 +45,7 @@ const PixelTrail: React.FC = () => {
   }, []);
 
   return (
-    <div className="z-[9999]">
+    <div className="fixed inset-0 z-[9999] pointer-events-none">
       {pixels.map((pixel) => (
         <div
           key={pixel.id}
