@@ -25,6 +25,10 @@ button:hover {
   cursor: url("/wanP-onClick.png"), auto;
 }
 
+a:hover {
+  cursor: url("/wanP-onClick.png"), auto;
+}
+
 * {
   box-sizing: border-box;
 }

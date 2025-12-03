@@ -40,7 +40,7 @@ const PixelTrail: React.FC = () => {
   }, []);
 
   return (
-    <div>
+    <div className="z-[9999]">
       {pixels.map((pixel) => (
         <div
           key={pixel.id}

@@ -7,7 +7,7 @@ const OwleryBtn = ({
   children: React.ReactNode;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>) => {
   return (
-    <button className="owlery-btn" {...props}>
+    <button className="owlery-btn action-text" {...props}>
       {children}
     </button>
   );

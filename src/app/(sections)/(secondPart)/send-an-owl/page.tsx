@@ -11,6 +11,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { FormValues, formSchema } from "@/validations/ContactValidation";
 import StoryContainer from "@/components/sorting-hat-storytelling/StoryContainer";
 import { AnimatePresence, motion } from "framer-motion";
+import Navbar from "@/components/navbar/Navbar";
 
 const SendAnOwl = () => {
   const [displayMessage, setDisplayMessage] = useState(false);
@@ -32,7 +33,7 @@ const SendAnOwl = () => {
   const [isSuccess, setIsSuccess] = useState(false);
   const [isFailure, setIsFailure] = useState(false);
 
-  const apiKey = process.env.FORM_ACCESS_KEY as string;
+  const apiKey = process.env.NEXT_PUBLIC_FORM_ACCESS_KEY!;
 
   const { submit: onSubmit } = useWeb3Forms({
     access_key: apiKey,
@@ -84,70 +85,128 @@ const SendAnOwl = () => {
   const message = whichMessage();
 
   return (
-    <div className="theOwlery-content flex items-center justify-center ">
-      <form
-        onSubmit={handleSubmit(onSubmit)}
-        className="theOwlery-scroll w-[30%] h-[80%] relative "
-      >
-        <div className=" h-full w-full flex flex-col  items-start  space-y-14 ">
-          <h1 className="text-center  w-full text-3xl">Send an Owl</h1>
-          <div className=" flex-1 flex flex-col gap-5 w-full items-start justify-start ">
-            <div className="w-full  flex items-center justify-center">
-              <OwleryInput
-                className="w-[70%]"
-                placeholder="Enter your owl name."
-                type="text"
-                {...register("name")}
-              />
-            </div>
+    <div className="theOwlery-content flex flex-col  h-screen">
+      <div className="lg:px-40  flex items-center">
+        <Navbar />
+      </div>
+      <div className=" flex-1 flex flex-col items-center justify-center  gap-2">
+        <motion.form
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.5 }}
+          noValidate
+          onSubmit={handleSubmit(onSubmit)}
+          className=" w-full md:w-[65%] md:h-[80%] lg:w-[40%] 2xl:w-[35%] h-full lg:h-[80%] relative "
+        >
+          <div className="theOwlery-scroll h-full w-full flex flex-col  items-start  space-y-14 ">
+            <h1 className="text-center  w-full text-3xl text-[#7E280C]">
+              Send an Owl
+            </h1>
+            <div className=" flex-1 flex flex-col gap-5 w-full items-start justify-start ">
+              <div className="w-full  flex items-center justify-center">
+                <OwleryInput
+                  className="w-[70%]"
+                  placeholder="Enter your owl name."
+                  type="text"
+                  {...register("name")}
+                />
+              </div>
 
-            <div className="w-full  flex items-center justify-center">
-              <OwleryInput
-                className="w-[70%]"
-                placeholder="Enter your owl email."
-                type="email"
-                {...register("email")}
-              />
-            </div>
+              <div className="w-full  flex items-center justify-center">
+                <OwleryInput
+                  className="w-[70%]"
+                  placeholder="Enter your owl email."
+                  type="email"
+                  {...register("email")}
+                />
+              </div>
 
-            <div className="w-full  flex items-center justify-center">
-              <OwleryTextArea
-                placeholder="Enter your owl message."
-                className="w-[70%]"
-                {...register("message")}
-              />
+              <div className="w-full  flex items-center justify-center">
+                <OwleryTextArea
+                  placeholder="Enter your owl message."
+                  className="w-[70%]"
+                  {...register("message")}
+                />
+              </div>
             </div>
           </div>
-        </div>
-        <div className="absolute bottom-10 left-[43%]  ">
-          <OwleryBtn>
-            {isSubmitting ? (
-              <svg
-                className="w-5 h-5 mx-auto text-white dark:text-black animate-spin"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
+          <div className="absolute bottom-10 left-[43%]  ">
+            <OwleryBtn>
+              {isSubmitting ? (
+                <svg
+                  className="w-5 h-5 mx-auto text-white dark:text-black animate-spin"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <circle
+                    className="opacity-25"
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="currentColor"
+                    strokeWidth="4"
+                  ></circle>
+                  <path
+                    className="opacity-75"
+                    fill="currentColor"
+                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                  ></path>
+                </svg>
+              ) : (
+                "SEND"
+              )}
+            </OwleryBtn>
+          </div>
+          <div className="w-full  flex items-center justify-between">
+            <div>
+              <p className="text-[10px] text-white">Aymen-khlil@outlook.com</p>
+            </div>
+            <div className="flex gap-3">
+              <a
+                href="https://www.linkedin.com/in/mohamed-aymen-khlil-467840179/"
+                target="_blank"
+                title="Visit LinkedIn"
               >
-                <circle
-                  className="opacity-25"
-                  cx="12"
-                  cy="12"
-                  r="10"
-                  stroke="currentColor"
-                  strokeWidth="4"
-                ></circle>
-                <path
-                  className="opacity-75"
-                  fill="currentColor"
-                  d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
-                ></path>
-              </svg>
-            ) : (
-              "SEND"
-            )}
-          </OwleryBtn>
-        </div>
-      </form>
+                <motion.div
+                  whileHover={{
+                    x: [-2, 2, -2],
+                    scale: 1.1,
+                    transition: {
+                      duration: 2,
+                      repeat: Infinity,
+                      repeatType: "mirror",
+                      ease: "easeInOut",
+                    },
+                  }}
+                  className="linkedin"
+                ></motion.div>
+              </a>
+              <a
+                href="https://github.com/Aymen-khlil"
+                target="_blank"
+                title="Visit Github"
+              >
+                <motion.div
+                  whileHover={{
+                    x: [-2, 2, -2],
+                    scale: 1.1,
+                    transition: {
+                      duration: 2,
+                      repeat: Infinity,
+                      repeatType: "mirror",
+                      ease: "easeInOut",
+                    },
+                  }}
+                  className="github"
+                ></motion.div>
+              </a>
+            </div>
+          </div>
+        </motion.form>
+      </div>
+
       <AnimatePresence mode={displayMessage ? "wait" : "sync"}>
         {displayMessage && (
           <motion.div
@@ -158,7 +217,7 @@ const SendAnOwl = () => {
               duration: 1,
               ease: "easeOut",
             }}
-            className="absolute bottom-10  left-0 h-36 lg:h-28 w-full flex items-center justify-center pb-4 lg:pb-0 sm:w-[35%] "
+            className="absolute bottom-10 flex items-center justify-center pb-4 lg:pb-0  left-0  w-full  h-36 lg:h-28 md:w-[60%] lg:w-[50%]"
           >
             <div className=" h-full w-[90%] sm:w-[80%]">
               <StoryContainer
