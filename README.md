@@ -127,7 +127,6 @@ Under this license:
 
 - ✔ You are free to use, modify, and distribute this project
 - ✔ Any changes you make must remain open source under the same GPLv3 license
-- ✔ You must credit the original author
 - ✔ If you distribute a modified version, you must also provide the source code
 - ❌ You cannot make a closed-source or proprietary version
 - ❌ You cannot sublicense the project under a non-GPL license
