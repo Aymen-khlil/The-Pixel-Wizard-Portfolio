@@ -1,19 +1,34 @@
-<p align="center">
-  <img src="./public/heading.PNG" alt="heading img">
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/NEXT.JS-000000?style=for-the-badge&logo=nextjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/TAILWIND%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
-  <img src="https://img.shields.io/badge/TYPESCRIPT-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/FRAMER%20MOTION-000000?style=for-the-badge&logo=framermotion&logoColor=white" />
-  <img src="https://img.shields.io/badge/REACT-HOOK-FORM-61DAFB?style=for-the-badge&logo=react-hook-form&logoColor=white" />
-  <img src="https://img.shields.io/badge/ZOD-000000?style=for-the-badge&logo=zod&logoColor=white" />
-  <img src="https://img.shields.io/badge/ZUSTAND-000000?style=for-the-badge&logo=zustand&logoColor=white" />
-</p>
-
 <h2 align="center">✨ The Pixel Wizard Portfolio ✨</h2>
+<p align="center"><i align="center"> A pixel-enchanted portfolio where owls deliver messages, scrolls hold secrets, and your cursor might actually be a wand. </i></p>
 
+
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+
+<h4 align="center">
+  <a href="https://github.com/amplication/amplication/actions/workflows/ci.yml">
+    <img src="https://img.shields.io/github/actions/workflow/status/amplication/amplication/ci.yml?branch=master&label=pipeline&style=flat-square" alt="continuous integration" style="height: 20px;">
+  </a>
+  <a href="https://github.com/amplication/amplication/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors-anon/amplication/amplication?color=yellow&style=flat-square" alt="contributors" style="height: 20px;">
+  </a>
+  <a href="https://opensource.org/licenses/Apache-2.0">
+    <img src="https://img.shields.io/badge/apache%202.0-blue.svg?style=flat-square&label=license" alt="license" style="height: 20px;">
+  </a>
+  <br>
+  <a href="https://amplication.com/discord">
+    <img src="https://img.shields.io/badge/discord-7289da.svg?style=flat-square&logo=discord" alt="discord" style="height: 20px;">
+  </a>
+  <a href="https://twitter.com/amplication">
+    <img src="https://img.shields.io/twitter/follow/amplication?style=social" alt="twitter" style="height: 20px;">
+  </a>
+  <a href="https://www.youtube.com/c/Amplicationcom">
+    <img src="https://img.shields.io/badge/youtube-d95652.svg?style=flat-square&logo=youtube" alt="youtube" style="height: 20px;">
+  </a>
+</h4>
+
+
+
+**************************************
 <p align="center">
   Magical Front-End Portfolio — Pixel Art • Fantasy UI • Next.js
 
