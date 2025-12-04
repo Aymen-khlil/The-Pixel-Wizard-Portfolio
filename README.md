@@ -98,7 +98,7 @@ Clean, responsive, playful, and recruiter-friendly—this portfolio is both a te
 
 ## 🚀 Live Demo
 🔮 Visit the magic portal:
-👉 https://your-portfolio-domain.com
+👉 Coming soon
 
 ## 🛠️ Installation & Setup
 
