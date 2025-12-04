@@ -1,71 +1,138 @@
-<!-- <p align="center"><img src="./public/heading.PNG" alt="heading img"></p><p align="center"><img src="https://img.shields.io/badge/NEXT.JS-000000?style=for-the-badge&logo=nextjs&logoColor=white" /><img src="https://img.shields.io/badge/TAILWIND%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" /><img src="https://img.shields.io/badge/TYPESCRIPT-3178C6?style=for-the-badge&logo=typescript&logoColor=white" /><img src="https://img.shields.io/badge/FRAMER%20MOTION-000000?style=for-the-badge&logo=framermotion&logoColor=white" /></p><h2 align="center">✨ The Pixel Wizard Portfolio ✨</h2><p align="center">Step into a world of enchantment with <b>The Pixel Wizard Portfolio</b>, an immersive and interactive web experience that redefines the traditional developer showcase. Inspired by the magical realms of Harry Potter, this portfolio masterfully blends cutting-edge frontend engineering with charming retro pixel-art aesthetics. Built with the power of Next.js, React, TypeScript, and Framer Motion, it transforms your journey through my skills and projects into a captivating storybook adventure, where each section unfolds as a unique chapter in a wizarding odyssey.</p>---## 🔥 Features<ul><li>⚡ <b>Modern Stack</b>: Crafted with <b>Next.js, Tailwind CSS, TypeScript, and Framer Motion</b> for a robust and dynamic experience.</li><li>🧙‍♀️ <b>Magical UI/UX</b>: Immersive, Harry-Potter-inspired user interface designed to enchant and engage visitors.</li><li>🎨 <b>Pixel-Art Aesthetics</b>: Unique retro pixel-art visuals that create a distinct and memorable brand identity.</li><li>🚀 <b>Smooth Animations</b>: Powered by Framer Motion for fluid transitions and interactive elements that bring the magic to life.</li><li>📱 <b>Responsive Design</b>: Flawlessly adapts across all devices, ensuring a consistent and magical experience whether on desktop or mobile.</li><li>📚 <b>Storybook Navigation</b>: Each section unfolds like a chapter in a wizarding tale, guiding users through projects and skills with a narrative flair.</li><li>🌟 <b>Interactive Elements</b>: Engage with spells and magical touches throughout the portfolio for a truly interactive journey.</li></ul>---## 📸 Screenshot<table align="center"><tr><td colspan="2"><img src="./public/001.PNG" width="100%"/></td></tr><tr><td><img src="./public/002.PNG" width="100%"/></td><td><img src="./public/003.PNG" width="100%"/></td></tr><tr><td><img src="./public/005.PNG" width="100%"/></td><td><img src="./public/004.PNG" width="100%"/></td></tr></table>---## 🚀 Live Demo👉 [Visit The Website](https://www.simonlinn.com)---## 🛠️ Setup & Run```bashgit clone https://github.com/Aymen-khlil/The-Pixel-Wizard-Portfolio.gitcd The Pixel Wizard Portfolionpm installnpm run dev```---## 💬 Feedbackconnect with me---## 📄 LicenseThis project is licensed under the MIT License. -->
+<h2 align="center">✨ The Pixel Wizard Portfolio ✨</h2>
+<p align="center"><i align="center"> A pixel-enchanted portfolio where owls deliver messages, scrolls hold secrets, and your cursor might actually be a wand. </i></p>
 
-<p align="center"><img src="./public/heading.png" alt="heading img"></p>
+
+<h4 align="center">
+<a href="">
+    <img src="https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB" alt="React" style="height: 20px;">
+  </a>
+  <a href="">
+    <img src="https://img.shields.io/badge/Next.js-black?logo=next.js&logoColor=white" alt="Next.js" style="height: 20px;">
+  </a>
+  <a href="">
+    <img src="https://img.shields.io/badge/Tailwind%20CSS-%2338B2AC.svg?logo=tailwind-css&logoColor=white" alt="Tailwind CSS" style="height: 20px;">
+  </a>
+  <br>
+  <a href="">
+    <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff" alt="TypeScript" style="height: 20px;">
+  </a>
+  <a href="">
+    <img src="https://img.shields.io/badge/Framer-05F?logo=framer&logoColor=fff" alt="Framer" style="height: 20px;">
+  </a>
+  <a href="">
+    <img src="https://img.shields.io/badge/React%20Hook%20Form-EC5990?logo=reacthookform&logoColor=fff" alt="React Hook Form" style="height: 20px;">
+  </a>
+  <a href="">
+    <img src="https://img.shields.io/badge/Zod-3E67B1?style=flat&logo=zod&logoColor=white" alt="Zod" style="height: 20px;">
+  </a>
+  <br>
+   <a href="">
+    <img src="https://img.shields.io/badge/State%20Management-Zustand-FF9900?logo=zustand" alt="Zod" style="height: 20px;">
+  </a>
+</h4>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/REACT-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
-  <img src="https://img.shields.io/badge/next.ts-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/TAILWIND%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
-  <img src="https://img.shields.io/badge/TYPESCRIPT-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/FRAMER%20MOTION-000000?style=for-the-badge&logo=framermotion&logoColor=white" />
+    <img src="https://private-user-images.githubusercontent.com/61596486/522680195-a21b2c76-2f1e-4bb5-bcbc-bb2057f8cb0a.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjQ4ODU0OTgsIm5iZiI6MTc2NDg4NTE5OCwicGF0aCI6Ii82MTU5NjQ4Ni81MjI2ODAxOTUtYTIxYjJjNzYtMmYxZS00YmI1LWJjYmMtYmIyMDU3ZjhjYjBhLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEyMDQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMjA0VDIxNTMxOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTlhYmUyMTc1Y2YwNDQzNjc5MDA4MDM2ZTMxYWYwMjljY2I0ZDcwOTk4Mjg1MzQyYjlkZDNhZjM0NDlhYmYxZTEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.IyzQsG-N9sM_Efc7yuFzmzzWfAFc2pIJymYAR0Ig2aQ" alt="dashboard"/>
 </p>
 
-<h2 align="center" style="font-family: 'Press Start 2P', cursive;">✨ 
-The Pixel Wizard Portfolio
- ✨</h2>
+## 🧙‍♂️ About This Project
+Welcome to the Pixel Wizard Portfolio, a magically cursed (in the best possible way) developer portfolio built with a fusion of modern web technologies and Hogwarts-inspired pixel art enchantments.
+
+This project began as soon as I started learning Framer Motion—what started as a simple animation experiment quickly transformed into a full wizarding-themed interactive portfolio.
+Step by step, spell by spell, I kept adding new ideas and features as I learned them. The project is still evolving and far from “complete,” but that’s exactly the point: it reflects my journey as a developer who’s always learning, improving, and crafting something better with each iteration.
+
+Clean, responsive, playful, and recruiter-friendly—this portfolio is both a technical showcase and a magical experience.
+
+## ✨ Features
+
+<details>
+<summary>
+  🧙 Magical UI & Pixel Art
+</summary>
+
+- Custom pixel owls, scrolls, wax seals, sparkles
+- Wooden desk backgrounds & parchment textures
+- Harry-Potter-themed house buttons
+- Pixel-art smooth animations and transitions
+
+</details>
+
+<details>
+<summary>
+  🦉 “Send an Owl” Contact Experience
+</summary>
+
+- Rune-labeled scroll inputs
+- Wax seal submit button
+- Friendly validation using RHF + Zod
+
+</details>
+
+<details>
+<summary>
+  ⚡ Technical Stack
+</summary>
+
+- Next.js for routing
+- TypeScript for safe magic
+- TailwindCSS for quick styling
+- Framer Motion for animations
+- React Hook Form + Zod for validation
+- Zustand as lightweight state management
+  
+</details>
+
+## 🖼️ Screenshots
+<details open>
+<summary>
+ Some screenshots
+</summary> <br />
 
 <p align="center">
-Step into a modern, fast, and beautifully animated developer portfolio showcasing my journey as a
-<strong>Front-End Developer</strong> transitioning into <strong>Full-Stack</strong> development.
-Crafted with React, Vite, TypeScript, Tailwind CSS, and Framer Motion, this portfolio blends clean UI,
-smooth animations, and a professional storytelling flow to present my skills, experience, and projects.
+    <img width="49%" src="https://private-user-images.githubusercontent.com/61596486/522680790-a795a35d-de47-41a3-87f1-36302c99cf8f.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjQ4ODU0OTgsIm5iZiI6MTc2NDg4NTE5OCwicGF0aCI6Ii82MTU5NjQ4Ni81MjI2ODA3OTAtYTc5NWEzNWQtZGU0Ny00MWEzLTg3ZjEtMzYzMDJjOTljZjhmLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEyMDQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMjA0VDIxNTMxOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTg0MDA2YTM3MWNhNmNlM2I5MGExYWQ1Nzc4ODM1Y2RmNTgxMDM4Yzg1NzllYWU2N2RkYzIwYmNiNzJlN2U4NmEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.9QCwUX1_TrATiCXo8vEor4AJg3GPNFJByOOln2fHtKo" alt="apis"/>
+&nbsp;
+    <img width="49%" src="https://private-user-images.githubusercontent.com/61596486/522680814-77c6ee30-9051-4288-b717-ffe024f1522f.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NjQ4ODU0OTgsIm5iZiI6MTc2NDg4NTE5OCwicGF0aCI6Ii82MTU5NjQ4Ni81MjI2ODA4MTQtNzdjNmVlMzAtOTA1MS00Mjg4LWI3MTctZmZlMDI0ZjE1MjJmLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTEyMDQlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUxMjA0VDIxNTMxOFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTUwMTllNzQ4ZWZmNWVlZDYzMTcwNDkxZjI2ZTdjZGJlNWYzYTA3ZjdhYWMwMTlmODkwZDBhNDFiMzExMDIxZDQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.H2DSSmsq27uAW0X8XrEyqXVHgNaYsRbXJq5JgrxCVi8" alt="data-models"/>
 </p>
 
----
-
-## 🔥 Features
-
-<ul>
-  <li>⚡ <b>Modern Stack</b>: Built using <b>React, Next TS, Tailwind CSS, TypeScript, and Framer Motion</b>.</li>
-  <li>🎨 <b>Clean UI & Animations</b>: Smooth transitions and micro-interactions across all sections.</li>
-  <li>📱 <b>Fully Responsive</b>: Perfect experience on desktop, tablet, and mobile.</li>
-  <li>🧩 <b>Reusable Components</b>: Modular architecture built for reusability and scalability.</li>
-  <li>🚀 <b>Optimized Performance</b>: Lightning-fast loading with Vite.</li>
-  <li>📚 <b>Narrative Sections</b>: About, Skills, Projects, and Contact arranged in a storytelling flow.</li>
-  <li>🔧 <b>Real Tech Experience</b>: Showcases my work with React, TS, Zustand, NestJS, APIs, SSE, and more.</li>
-</ul>
-
----
-
-## 📸 Screenshots
-
-<table align="center">
-  <tr>
-    <td colspan="2"><img src="./public/001.png" width="100%"/></td>
-  </tr>
-  <tr>
-    <td><img src="./public/002.png" width="100%"/></td>
-    <td><img src="./public/003.png" width="100%"/></td>
-  </tr>
-  <tr>
-    <td><img src="./public/004.png" width="100%"/></td>
-    <td><img src="./public/005.png" width="100%"/></td>
-  </tr>
-</table>
-
----
+</details>
 
 ## 🚀 Live Demo
+🔮 Visit the magic portal:
+👉 https://your-portfolio-domain.com
 
-👉 **Coming Soon**  
-
-
----
-
-## 🛠️ Setup & Run
+## 🛠️ Installation & Setup
 
 ```bash
-git clone https://github.com/Aymen-khlil/The-Pixel-Wizard-Portfolio.git
-cd The-Pixel-Wizard-Portfolio
+git clone https://github.com/your-username/the-owlery-portfolio.git
+cd the-owlery-portfolio
 npm install
 npm run dev
+```
+
+## 📬 Contact
+- 🦉 Send an Owl → via contact form
+- 📧 Email → aymen-khlil@outlook.com
+- 💼 [LinkedIn](https://www.linkedin.com/in/mohamed-aymen-khlil-467840179/)
+- 🐙 [Github](https://github.com/Aymen-khlil)
+
+## 📝 License 
+
+This project is licensed under the GNU General Public License v3 (GPLv3).
+
+![GPLv3 License](https://img.shields.io/badge/License-GPLv3-blue.svg)
+
+Copyright © 2025, Aymen Khlil
+
+Under this license:
+
+- ✔ You are free to use, modify, and distribute this project
+- ✔ Any changes you make must remain open source under the same GPLv3 license
+- ✔ You must credit the original author
+- ✔ If you distribute a modified version, you must also provide the source code
+- ❌ You cannot make a closed-source or proprietary version
+- ❌ You cannot sublicense the project under a non-GPL license
+
+For the full terms, see the official license text:
+https://www.gnu.org/licenses/gpl-3.0.txt
+
+![GPLv3 License](https://img.shields.io/badge/License-GPLv3-blue.svg)

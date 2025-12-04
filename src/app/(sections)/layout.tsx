@@ -7,10 +7,12 @@ export default function PagesLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div
-      className={`${geistSans.className} ${geistMono.variable} h-screen    overflow-auto`}
-    >
-      {children}
-    </div>
+    <PageTransition>
+      <div
+        className={`${geistSans.className} ${geistMono.variable} h-screen    overflow-auto`}
+      >
+        {children}
+      </div>
+    </PageTransition>
   );
 }
