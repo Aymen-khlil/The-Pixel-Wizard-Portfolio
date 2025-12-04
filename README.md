@@ -133,5 +133,3 @@ Under this license:
 
 For the full terms, see the official license text:
 https://www.gnu.org/licenses/gpl-3.0.txt
-
-![GPLv3 License](https://img.shields.io/badge/License-GPLv3-blue.svg)
