@@ -73,7 +73,7 @@ Clean, responsive and playful this portfolio is both a technical showcase and a 
   ⚡ Technical Stack
 </summary>
 
-- Next.js for routing
+- Next.js for frontend
 - TypeScript for safe magic
 - TailwindCSS for quick styling
 - Framer Motion for animations
