@@ -6,7 +6,7 @@ import TransitionOverlay from "@/components/transitionOverlays/TransitionOverlay
 import { useThemeStore } from "@/store/theme/themeStore";
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/navigation";
-import { Activity, useEffect, useState } from "react";
+import { Activity, useEffect, useRef, useState } from "react";
 
 export default function HomePage() {
   const [transition, setTransition] = useState(false);
@@ -28,6 +28,48 @@ export default function HomePage() {
   useEffect(() => {
     loadTheme();
   }, [loadTheme]);
+
+  const soundtrackRef = useRef<Howl | null>(null);
+
+  useEffect(() => {
+    soundtrackRef.current = new Howl({
+      src: ["/audio/hedwigTheme.mp3"],
+      loop: true,
+      volume: 0,
+      mute: true,
+    });
+
+    soundtrackRef.current.play();
+
+    const handleInteraction = () => {
+      if (soundtrackRef.current) {
+        soundtrackRef.current.mute(false);
+        soundtrackRef.current.fade(0, 0.5, 1000);
+      }
+
+      document.removeEventListener("click", handleInteraction);
+      document.removeEventListener("mousemove", handleInteraction);
+      document.removeEventListener("keypress", handleInteraction);
+      document.removeEventListener("scroll", handleInteraction);
+    };
+
+    document.addEventListener("click", handleInteraction);
+    document.addEventListener("mousemove", handleInteraction);
+    document.addEventListener("keypress", handleInteraction);
+    document.addEventListener("scroll", handleInteraction);
+
+    return () => {
+      document.removeEventListener("click", handleInteraction);
+      document.removeEventListener("mousemove", handleInteraction);
+      document.removeEventListener("keypress", handleInteraction);
+      document.removeEventListener("scroll", handleInteraction);
+
+      if (soundtrackRef.current) {
+        soundtrackRef.current.stop();
+        soundtrackRef.current.unload();
+      }
+    };
+  }, []);
 
   return (
     <section

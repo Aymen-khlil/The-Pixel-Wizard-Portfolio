@@ -3,6 +3,7 @@ import "./button.css";
 import { cn } from "@/lib/cn";
 import { useThemeStore } from "@/store/theme/themeStore";
 import { motion } from "framer-motion";
+import useSound from "@/lib/onClickSoundEffect";
 
 const ActionButton = ({
   children,
@@ -33,6 +34,8 @@ const ActionButton = ({
     }
   };
 
+  const playSound = useSound("/audio/onClickAudio.wav");
+
   return (
     <motion.div
       className="  active:scale-[0.9]"
@@ -44,7 +47,13 @@ const ActionButton = ({
         ease: "easeInOut",
       }}
     >
-      <button className={cn(themeSwitcher(), "action-text")} onClick={onClick}>
+      <button
+        className={cn(themeSwitcher(), "action-text")}
+        onClick={() => {
+          playSound();
+          onClick!();
+        }}
+      >
         {children}
       </button>
     </motion.div>

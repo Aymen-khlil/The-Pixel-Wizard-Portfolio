@@ -1,3 +1,4 @@
+import useSound from "@/lib/onClickSoundEffect";
 import "./button.css";
 
 const OwleryBtn = ({
@@ -6,8 +7,13 @@ const OwleryBtn = ({
 }: {
   children: React.ReactNode;
 } & React.ButtonHTMLAttributes<HTMLButtonElement>) => {
+  const playSound = useSound("/audio/onClickAudio.wav");
   return (
-    <button className="owlery-btn action-text" {...props}>
+    <button
+      className="owlery-btn action-text"
+      {...props}
+      onClick={() => playSound()}
+    >
       {children}
     </button>
   );
