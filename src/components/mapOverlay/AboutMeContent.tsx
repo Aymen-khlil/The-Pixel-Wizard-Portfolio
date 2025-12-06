@@ -143,7 +143,7 @@ const AboutMeContent = () => {
                 </motion.div>
                 <motion.div
                   key={theme || "no-theme"}
-                  className="active:scale-[0.9]"
+                  className="active:scale-[0.9]  flex items-center justify-center"
                   initial={{ opacity: 0, scale: 1.1 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{

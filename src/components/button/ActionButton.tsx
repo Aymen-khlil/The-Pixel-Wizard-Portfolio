@@ -9,10 +9,12 @@ const ActionButton = ({
   children,
   onClick,
   delayAnimation = 0,
+  className,
 }: {
   children: ReactNode;
   onClick?: () => void;
   delayAnimation?: number;
+  className?: string;
 }) => {
   const { theme } = useThemeStore();
   const themeSwitcher = () => {
@@ -38,7 +40,7 @@ const ActionButton = ({
 
   return (
     <motion.div
-      className="  active:scale-[0.9]"
+      className={cn("active:scale-[0.9]", className)}
       initial={{ opacity: 0, scale: 1.5 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{

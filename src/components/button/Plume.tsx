@@ -22,7 +22,7 @@ const Plume = () => {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
             animate={{
-              width: isHovered ? "auto" : 50,
+              width: isHovered ? 240 : 50,
             }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
           >
