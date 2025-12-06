@@ -9,6 +9,7 @@ import SpellHolderRight from "@/components/spellbook/SpellHolderRight";
 import { motion } from "framer-motion";
 import ActionButton from "@/components/button/ActionButton";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 const Spellbook = () => {
   const router = useRouter();
@@ -55,6 +56,14 @@ const Spellbook = () => {
 
   return (
     <div className="spellbook-content flex flex-col h-screen overflow-y-auto">
+      <Image
+        src="/backgrounds/spellbook-Background.png"
+        alt="Spellbook background"
+        fill
+        priority
+        className="object-cover -z-10"
+        quality={90}
+      />
       <div className="lg:px-40">
         <Navbar />
       </div>

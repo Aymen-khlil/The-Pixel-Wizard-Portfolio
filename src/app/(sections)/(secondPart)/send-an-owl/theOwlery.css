@@ -1,10 +1,7 @@
 .theOwlery-content {
   position: relative;
   height: 100vh;
-  background-image: url("/backgrounds/theOwleryBackground.png");
-  background-position: 100% 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* Background image moved to Next.js Image component for optimization */
 }
 
 .theOwlery-scroll {

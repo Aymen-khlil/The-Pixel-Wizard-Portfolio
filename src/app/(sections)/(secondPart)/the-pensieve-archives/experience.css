@@ -1,6 +1,4 @@
 .experience-holder {
-  background-image: url("/backgrounds/exp-background.png");
-  background-size: 100% 100%;
-  background-position: center;
-  background-repeat: no-repeat;
+  position: relative;
+  /* Background image moved to Next.js Image component for optimization */
 }

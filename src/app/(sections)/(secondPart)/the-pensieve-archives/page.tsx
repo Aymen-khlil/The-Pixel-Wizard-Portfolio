@@ -4,10 +4,19 @@ import "./experience.css";
 import ExperienceContainer from "@/components/experienceTrail/ExperienceContainer";
 import Caracter from "@/components/houseCaracters/Caracter";
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 
 const Experiences = () => {
   return (
     <div className="experience-holder flex flex-col h-screen">
+      <Image
+        src="/backgrounds/exp-background.png"
+        alt="Experience background"
+        fill
+        priority
+        className="object-cover -z-10"
+        quality={90}
+      />
       <div className="lg:px-40">
         <Navbar />
       </div>

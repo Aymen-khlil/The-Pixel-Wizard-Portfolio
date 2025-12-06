@@ -1,8 +1,6 @@
 .spellbook-content {
   /* Keep this hidden initially */
+  position: relative;
   height: 100vh;
-  background-image: url("/backgrounds/spellbook-Background.png");
-  background-position: 100% 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* Background image moved to Next.js Image component for optimization */
 }

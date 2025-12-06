@@ -249,6 +249,7 @@ const ExperienceContainer = () => {
           alt="Wand"
           width={24}
           height={24}
+          priority
           className="absolute left-0 top-0 hidden lg:block"
         />
         <div className="experience-container z-10 overflow-y-auto scroll max-h-screen w-full space-y-7 lg:pr-20 pb-10 ">

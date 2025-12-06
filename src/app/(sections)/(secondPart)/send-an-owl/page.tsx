@@ -12,6 +12,7 @@ import { FormValues, formSchema } from "@/validations/ContactValidation";
 import StoryContainer from "@/components/sorting-hat-storytelling/StoryContainer";
 import { AnimatePresence, motion } from "framer-motion";
 import Navbar from "@/components/navbar/Navbar";
+import Image from "next/image";
 
 const SendAnOwl = () => {
   const [displayMessage, setDisplayMessage] = useState(false);
@@ -86,6 +87,14 @@ const SendAnOwl = () => {
 
   return (
     <div className="theOwlery-content flex flex-col  h-screen">
+      <Image
+        src="/backgrounds/theOwleryBackground.png"
+        alt="Owlery background"
+        fill
+        priority
+        className="object-cover -z-10"
+        quality={90}
+      />
       <div className="lg:px-40  flex items-center">
         <Navbar />
       </div>
