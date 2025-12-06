@@ -16,7 +16,7 @@
   mask-position: center;
   mask-repeat: no-repeat;
   z-index: -1;
-  background-image: url("/backgrounds/mauraudarMap.png");
+  background-image: url("/backgrounds/mauraudarMap.webp");
   background-size: cover;
   background-position: center;
 }
@@ -110,7 +110,7 @@
   border-image-outset: 0px 0px 0px 0px;
   border-image-repeat: stretch stretch;
   background-clip: border-box;
-  border-image-source: url("/navbars/Gryffinndor-navbar.png");
+  border-image-source: url("/navbars/Gryffinndor-navbar.webp");
 }
 
 .ravenclaw-navbar {
@@ -122,7 +122,7 @@
   border-image-outset: 0px 0px 0px 0px;
   border-image-repeat: stretch stretch;
   background-clip: border-box;
-  border-image-source: url("/navbars/ravenclaw-navbar.png");
+  border-image-source: url("/navbars/ravenclaw-navbar.webp");
 }
 
 .slytherin-navbar {
@@ -134,7 +134,7 @@
   border-image-outset: 0px 0px 0px 0px;
   border-image-repeat: stretch stretch;
   background-clip: border-box;
-  border-image-source: url("/navbars/slytherin-navbar.png");
+  border-image-source: url("/navbars/slytherin-navbar.webp");
 }
 
 .huffelpuff-navbar {
@@ -146,5 +146,5 @@
   border-image-outset: 0px 0px 0px 0px;
   border-image-repeat: stretch stretch;
   background-clip: border-box;
-  border-image-source: url("/navbars/hufferpuf-navbar.png");
+  border-image-source: url("/navbars/hufferpuf-navbar.webp");
 }

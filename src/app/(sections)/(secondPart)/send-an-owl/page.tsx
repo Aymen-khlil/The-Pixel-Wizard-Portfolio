@@ -88,7 +88,7 @@ const SendAnOwl = () => {
   return (
     <div className="theOwlery-content flex flex-col  h-screen">
       <Image
-        src="/backgrounds/theOwleryBackground.png"
+        src="/backgrounds/theOwleryBackground.webp"
         alt="Owlery background"
         fill
         priority

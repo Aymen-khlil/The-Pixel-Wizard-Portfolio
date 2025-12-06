@@ -7,7 +7,7 @@
   border-image-outset: 0px 0px 0px 0px;
   border-image-repeat: stretch stretch;
   background-clip: border-box;
-  border-image-source: url("/navbars/navbar.png");
+  border-image-source: url("/navbars/navbar.webp");
 }
 
 .gryffindor-banner {
@@ -19,7 +19,7 @@
   border-image-outset: 0px 0px 0px 0px;
   border-image-repeat: stretch stretch;
   background-clip: border-box;
-  border-image-source: url("/navbars/Gryffinndor-navbar.png");
+  border-image-source: url("/navbars/Gryffinndor-navbar.webp");
 }
 
 .ravenclaw-banner {
@@ -31,7 +31,7 @@
   border-image-outset: 0px 0px 0px 0px;
   border-image-repeat: stretch stretch;
   background-clip: border-box;
-  border-image-source: url("/navbars/ravenclaw-navbar.png");
+  border-image-source: url("/navbars/ravenclaw-navbar.webp");
 }
 
 .slytherin-banner {
@@ -43,7 +43,7 @@
   border-image-outset: 0px 0px 0px 0px;
   border-image-repeat: stretch stretch;
   background-clip: border-box;
-  border-image-source: url("/navbars/slytherin-navbar.png");
+  border-image-source: url("/navbars/slytherin-navbar.webp");
 }
 
 .huffelpuff-banner {
@@ -55,7 +55,7 @@
   border-image-outset: 0px 0px 0px 0px;
   border-image-repeat: stretch stretch;
   background-clip: border-box;
-  border-image-source: url("/navbars/hufferpuf-navbar.png");
+  border-image-source: url("/navbars/hufferpuf-navbar.webp");
 }
 
 .navbar-title {

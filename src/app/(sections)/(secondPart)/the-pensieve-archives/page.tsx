@@ -10,7 +10,7 @@ const Experiences = () => {
   return (
     <div className="experience-holder flex flex-col h-screen">
       <Image
-        src="/backgrounds/exp-background.png"
+        src="/backgrounds/exp-background.webp"
         alt="Experience background"
         fill
         priority

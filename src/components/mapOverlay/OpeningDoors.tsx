@@ -7,7 +7,7 @@ const OpeningDoors = () => {
       <motion.div
         className="absolute inset-0"
         style={{
-          backgroundImage: "url(/backgrounds/mauraudarMap.png)",
+          backgroundImage: "url(/backgrounds/mauraudarMap.webp)",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",

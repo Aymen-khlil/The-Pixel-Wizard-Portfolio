@@ -23,14 +23,14 @@
 
 @keyframes loadMask {
   to {
-    background-image: url("/backgrounds/mauraudarMap.png");
+    background-image: url("/backgrounds/mauraudarMap.webp");
   }
 }
 
 .final-content {
   /* Keep this hidden initially */
   opacity: 0;
-  background-image: url("/backgrounds/mauraudarMap.png");
+  background-image: url("/backgrounds/mauraudarMap.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -44,7 +44,7 @@
   position: relative;
   border-style: solid;
   padding: 17px 25px;
-  border-image-source: url("/mapOverlay/openedScroll.png");
+  border-image-source: url("/mapOverlay/openedScroll.webp");
   border-image-slice: 62 87 65 87 fill;
   border-image-width: 18px;
   border-image-outset: 0px 0px 0px 0px;

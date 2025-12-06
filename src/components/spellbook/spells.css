@@ -2,7 +2,7 @@
   position: relative;
   border-style: solid;
   padding: 10px;
-  border-image-source: url("/spellbook/RuneTwo.png");
+  border-image-source: url("/spellbook/RuneTwo.webp");
   border-image-slice: 55 39 55 39 fill;
   border-image-width: 12px;
   border-image-outset: 0px 0px 0px 0px;
@@ -28,7 +28,7 @@
   position: relative;
   border-style: solid;
   padding: 50px 30px;
-  border-image-source: url("/spellBook/Spell-holder.png");
+  border-image-source: url("/spellBook/Spell-holder.webp");
   border-image-slice: 68 49 55 49 fill;
   border-image-width: 40px;
   border-image-outset: 0px 0px 0px 0px;
@@ -40,7 +40,7 @@
   position: relative;
   border-style: solid;
   padding: 50px 30px;
-  border-image-source: url("/spellBook/spellLeft.png");
+  border-image-source: url("/spellBook/spellLeft.webp");
   border-image-slice: 68 49 55 49 fill;
   border-image-width: 40px;
   border-image-outset: 0px 0px 0px 0px;
@@ -52,7 +52,7 @@
   position: relative;
   border-style: solid;
   padding: 50px 30px;
-  border-image-source: url("/spellBook/spellRight.png");
+  border-image-source: url("/spellBook/spellRight.webp");
   border-image-slice: 68 49 55 49 fill;
   border-image-width: 40px;
   border-image-outset: 0px 0px 0px 0px;

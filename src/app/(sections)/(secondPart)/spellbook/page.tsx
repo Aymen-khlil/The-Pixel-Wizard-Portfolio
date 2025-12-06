@@ -57,7 +57,7 @@ const Spellbook = () => {
   return (
     <div className="spellbook-content flex flex-col h-screen overflow-y-auto">
       <Image
-        src="/backgrounds/spellbook-Background.png"
+        src="/backgrounds/spellbook-Background.webp"
         alt="Spellbook background"
         fill
         priority

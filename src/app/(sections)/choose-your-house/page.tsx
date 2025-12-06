@@ -1,10 +1,10 @@
 "use client";
 
 import HouseCardContainer from "@/components/houseCards/HouseCardContainer";
-import griffendor from "../../../../public/houseCards/Griffindor-logo.png";
-import hupperpuf from "../../../../public/houseCards/Hupperpuf-logo.png";
-import ravenclaw from "../../../../public/houseCards/Ravenclaw-logo.png";
-import slytherin from "../../../../public/houseCards/Slytherin-logo.png";
+import griffendor from "../../../../public/houseCards/Griffindor-logo.webp";
+import hupperpuf from "../../../../public/houseCards/Hupperpuf-logo.webp";
+import ravenclaw from "../../../../public/houseCards/Ravenclaw-logo.webp";
+import slytherin from "../../../../public/houseCards/Slytherin-logo.webp";
 import { AnimatePresence, motion, MotionConfig } from "framer-motion";
 import { useState } from "react";
 import StoryContainer from "@/components/sorting-hat-storytelling/StoryContainer";
@@ -45,7 +45,7 @@ const HousePicks = () => {
     <div
       className="min-h-screen flex items-center justify-center flex-col overflow-auto"
       style={{
-        backgroundImage: "url(/backgrounds/hog-dining.png)",
+        backgroundImage: "url(/backgrounds/hog-dining.webp)",
         backgroundSize: "cover",
         backgroundPosition: "center center",
         backgroundRepeat: "no-repeat",

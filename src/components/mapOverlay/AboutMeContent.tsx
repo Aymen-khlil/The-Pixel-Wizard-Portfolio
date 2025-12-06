@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Plume from "../button/Plume";
 import { useRouter } from "next/navigation";
 import { useThemeStore } from "@/store/theme/themeStore";
-import goldenSnitch from "../../../public/Golden-Snitch.png";
+import goldenSnitch from "../../../public/Golden-Snitch.webp";
 
 const AboutMeContent = () => {
   const router = useRouter();
