@@ -58,7 +58,7 @@ const AboutMeContent = () => {
                 </p>
                 <p>
                   Currently working as a Full-Stack Developer, I’ve contributed
-                  to projects across the entire development lifecycle—from
+                  to projects across the entire development lifecycle from
                   building RESTful APIs with NestJS and MongoDB to developing
                   modern frontend experiences. I enjoy solving challenging
                   problems, improving performance, and turning UI/UX concepts
@@ -66,11 +66,11 @@ const AboutMeContent = () => {
                 </p>
                 <p>
                   Before getting into full-stack development, I spent years
-                  honing strong communication, leadership, and
-                  project-management skills, including leading a 19+ member team
-                  at AIESEC. These experiences help me collaborate effectively
-                  and bring structure, clarity, and initiative to the teams I
-                  work with.
+                  honing strong communication, leadership, and project
+                  management skills, including leading a 19+ member team at
+                  AIESEC. These experiences help me collaborate effectively and
+                  bring structure, clarity, and initiative to the teams I work
+                  with.
                 </p>
                 <div>
                   <p className="title-about-me pl-1">
@@ -87,8 +87,8 @@ const AboutMeContent = () => {
                         />
                       </div>
                       <p>
-                        Good foundations with real experience delivering
-                        end-to-end features.
+                        Good foundations with real experience delivering end to
+                        end features.
                       </p>
                     </div>
 
@@ -102,7 +102,7 @@ const AboutMeContent = () => {
                         />
                       </div>
                       <p>
-                        A problem-solving mindset focused on clean, scalable
+                        A problem solving mindset focused on clean, scalable
                         solutions.
                       </p>
                     </div>
@@ -130,7 +130,7 @@ const AboutMeContent = () => {
                         />
                       </div>
                       <p>
-                        A fast-learning attitude and drive to constantly improve
+                        A fast learning attitude and drive to constantly improve
                         and explore new tools.
                       </p>
                     </div>
