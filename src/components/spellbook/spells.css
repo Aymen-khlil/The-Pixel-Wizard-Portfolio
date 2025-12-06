@@ -2,7 +2,7 @@
   position: relative;
   border-style: solid;
   padding: 10px;
-  border-image-source: url("/spellbook/RuneTwo.webp");
+  border-image-source: url("/spellBook/RuneTwo.webp");
   border-image-slice: 55 39 55 39 fill;
   border-image-width: 12px;
   border-image-outset: 0px 0px 0px 0px;
