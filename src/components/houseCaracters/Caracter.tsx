@@ -1,9 +1,4 @@
 import Image from "next/image";
-// import griffendor from "./images/Griffindor.png";
-// import hupperpuf from "./images/Hufflepuff.png";
-// import ravenclaw from "./images/Ravenclaw.png";
-// import slytherin from "./images/Slytherin.png";
-// import mudblood from "./images/Mudblood.png";
 
 import griffendor from "../../../public/houseCaracters/Griffindor-pixalated.png";
 import hupperpuf from "../../../public/houseCaracters/Hufflepuff-pixalated.png";

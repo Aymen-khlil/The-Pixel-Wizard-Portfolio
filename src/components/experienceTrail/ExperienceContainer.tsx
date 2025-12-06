@@ -1,9 +1,11 @@
+"use client";
 import "./experienceTrail.css";
 import ExperienceCard from "./ExperienceCard";
 import Image from "next/image";
 import ExpWand from "../../../public/experience/exp-wand.png";
 import ActionButton from "../button/ActionButton";
 import harryScar from "../../../public/mapOverlay/harry-scar.png";
+import { useRouter } from "next/navigation";
 
 const experiences = [
   {
@@ -238,6 +240,7 @@ const experiences = [
 ];
 
 const ExperienceContainer = () => {
+  const router = useRouter();
   return (
     <div className="  h-full flex flex-col">
       <div className="relative flex justify-center flex-col items-center   overflow-y-auto flex-1">
@@ -261,7 +264,13 @@ const ExperienceContainer = () => {
         </div>
       </div>
       <div className=" flex   justify-center">
-        <ActionButton>Continue</ActionButton>
+        <ActionButton
+          onClick={() => {
+            router.push("/send-an-owl");
+          }}
+        >
+          Continue
+        </ActionButton>
       </div>
     </div>
   );
