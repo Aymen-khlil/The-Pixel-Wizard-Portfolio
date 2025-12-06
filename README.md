@@ -98,7 +98,7 @@ Clean, responsive and playful this portfolio is both a technical showcase and a 
 
 ## 🚀 Live Demo
 🔮 Visit the magic portal:
-👉 Coming soon
+👉 [Visit website](https://the-pixel-wizard-portfolio.vercel.app/)
 
 ## 🛠️ Installation & Setup
 
