@@ -38,7 +38,7 @@
 ## 🧙‍♂️ About This Project
 Welcome to the Pixel Wizard Portfolio, a magically cursed (in the best possible way) developer portfolio built with a fusion of modern web technologies and Hogwarts-inspired pixel art enchantments.
 
-This project began as soon as I started learning Framer Motion—what started as a simple animation experiment quickly transformed into a full wizarding-themed interactive portfolio.
+This project began as soon as I started learning Framer Motion, what started as a simple animation experiment quickly transformed into a full wizarding-themed interactive portfolio.
 Step by step, spell by spell, I kept adding new ideas and features as I learned them. The project is still evolving and far from “complete,” but that’s exactly the point: it reflects my journey as a developer who’s always learning, improving, and crafting something better with each iteration.
 
 Clean, responsive and playful this portfolio is both a technical showcase and a magical experience.
