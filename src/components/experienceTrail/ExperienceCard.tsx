@@ -44,13 +44,12 @@ const ExperienceCard = ({
   const { scrollYProgress } = useScroll({
     target: cardRef,
     container: containerElement ? { current: containerElement } : undefined,
-    offset: ["start end", "center start"],
+    offset: ["start end", "start center"],
   });
 
   const [isAtCenter, setIsAtCenter] = useState(false);
 
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
-    // When latest > 0, the card center has crossed the viewport center
     setIsAtCenter(latest > 0.2);
   });
 

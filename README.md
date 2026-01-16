@@ -32,7 +32,7 @@
 </h4>
 
 <p align="center">
-    <img src="https://scontent.ftun2-2.fna.fbcdn.net/v/t1.15752-9/590869870_1321871616649423_3205746148551189187_n.png?_nc_cat=104&ccb=1-7&_nc_sid=0024fc&_nc_ohc=hgXeabE-oXIQ7kNvwEo8YiZ&_nc_oc=AdmUJwmHk26IgLYVucbAWM3sEAKVDd59-PGUZC58XpI82svCZi6Owo6-5WUriItEc5A&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.ftun2-2.fna&oh=03_Q7cD4AGG3Pc0GfFRUJbom0hUkiIQFLS8sMvYVpwMES77prEQAg&oe=695ABA2F" alt="dashboard"/>
+    <img src="./public/readme/HomePage.jpg" alt="dashboard"/>
 </p>
 
 ## 🧙‍♂️ About This Project
@@ -89,9 +89,9 @@ Clean, responsive and playful this portfolio is both a technical showcase and a 
 </summary> <br />
 
 <p align="center">
-    <img width="49%" src="https://scontent.ftun2-2.fna.fbcdn.net/v/t1.15752-9/591460053_1221293383221054_5402817813895924889_n.png?_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_ohc=HKGfEQ_xhqQQ7kNvwGTiIqq&_nc_oc=AdnhvPZWpH3SDd_dLIDMWq38GNMnPsyE3OKinh3Bw6bqbvJBuWIGI6GbXFMS8yKiJmw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.ftun2-2.fna&oh=03_Q7cD4AHkP0rRls7po8TtVajsFf91wFs4TmzzHuI_TDkIvQrGVQ&oe=695AAE61" alt="apis"/>
+    <img width="49%" src="./public/readme/ChooseHouse.jpg" alt="ChooseHouse"/>
 &nbsp;
-    <img width="49%" src="https://scontent.ftun2-2.fna.fbcdn.net/v/t1.15752-9/590297444_1192765339470727_1298908086599181766_n.png?_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_ohc=xbKWE7ELItwQ7kNvwH5F0ZM&_nc_oc=AdlrHob_yD1fGSKwTf-O-snSYof7XToLjTNaM2O4E1rIACkmrngChaSBIqznVUMtxew&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.ftun2-2.fna&oh=03_Q7cD4AHvVLkiMAZ-Oea-Gup0AFBqVhnJ25QIcmf2MQ687Tam9w&oe=695AC9D4" alt="data-models"/>
+    <img width="49%" src="./public/readme/getToKnowMe.jpg" alt="HomePage"/>
 </p>
 
 </details>
